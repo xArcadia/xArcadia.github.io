@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Interactive Reviewer — Study smarter with organized modules, practice challenges, and instant answer keys." />
+  <title>Interactive Reviewer</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <div class="header-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        </svg>
+      </div>
+      <span class="header-title">Interactive Reviewer</span>
+    </div>
+    <div class="header-right">
+      <div class="profile-menu" id="profileMenu">
+        <button class="profile-btn" id="profileBtn" aria-label="Profile settings">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </button>
+        <div class="profile-dropdown" id="profileDropdown">
+          <div class="dropdown-section">
+            <div class="dropdown-label">Appearance</div>
+            <div class="theme-row">
+              <span class="theme-row-label">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                Dark Mode
+              </span>
+              <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <svg class="theme-toggle-icon sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm0 16a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zm8.66-11a1 1 0 01-.37 1.37l-.86.5a1 1 0 11-1-1.73l.86-.5A1 1 0 0120.66 7zM5.57 15.86a1 1 0 01-.37 1.37l-.86.5a1 1 0 11-1-1.73l.86-.5a1 1 0 011.37.36zM22 12a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM4 12a1 1 0 01-1 1H2a1 1 0 110-2h1a1 1 0 011 1zm16.66 3a1 1 0 01-1.37.37l-.86-.5a1 1 0 111-1.73l.86.5a1 1 0 01.37 1.37zM5.57 8.14a1 1 0 01-1.37.37l-.86-.5a1 1 0 111-1.73l.86.5a1 1 0 01.37 1.36zM12 6a6 6 0 100 12 6 6 0 000-12z"/></svg>
+                <svg class="theme-toggle-icon moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21.75 15.5a.75.75 0 01-.07 1.05 9.96 9.96 0 01-6.18 2.45c-5.52 0-10-4.48-10-10 0-3.31 1.61-6.24 4.09-8.07a.75.75 0 011.12.82A8.5 8.5 0 0019.43 14.4a.75.75 0 01.82.1l1.5 1z"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-section">
+            <div class="dropdown-label">Accent Color</div>
+            <div class="color-picker" id="colorPicker">
+              <button class="color-swatch" data-color="indigo" title="Indigo" style="--swatch:#6366f1"></button>
+              <button class="color-swatch" data-color="rose" title="Rose" style="--swatch:#f43f5e"></button>
+              <button class="color-swatch" data-color="emerald" title="Emerald" style="--swatch:#10b981"></button>
+              <button class="color-swatch" data-color="amber" title="Amber" style="--swatch:#f59e0b"></button>
+              <button class="color-swatch" data-color="cyan" title="Cyan" style="--swatch:#06b6d4"></button>
+              <button class="color-swatch" data-color="orange" title="Orange" style="--swatch:#f97316"></button>
+              <button class="color-swatch" data-color="violet" title="Violet" style="--swatch:#8b5cf6"></button>
+              <button class="color-swatch" data-color="fuchsia" title="Fuchsia" style="--swatch:#d946ef"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="section-header">
+      <h1>Your Subjects</h1>
+      <p>Choose a subject to start reviewing</p>
+    </div>
+
+    <div class="subjects-grid" id="subjectsGrid">
+      <!-- Subject cards rendered by JS -->
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+Interactive Reviewer
+
+:can we do this in html css js? cause im planning to upload it in GitHub so i/we/the users can use it even in phone by not downloading the file and stuff
+
+What this all about is a Interactive reviewer. What i want is to create a reviewer where i can put in multiple reviewer/course/subject inside that is its modules and so on.
+
+
+First do a homepage for it to see all available subject (what we only have right now is Computer Systems and Platform Technologies, so we gonna do a reviewer for this subject for now, its a total of 8 module read it thankyou)
+
+after user choos a subject, it will show tabs or buttons:
+
+Reviewer:
+	- it will show all modules and some notes regarding that moduleto be reviewed by the user
+
+Challenge:
+	- this part is to test the user 
+	- UI is the same as the reviewer where youll see it by module 1 2 3 ... and so on, and pick one
+	- after picking one there's an option to pick whether they want a hell mode or normal mode, and a setting button,
+		-start button starts the test
+		-after exam it will also show score percentage
+		- also explanations will be good too
+		- after clicking the answer it will show immidietly the correct answer and wrong
+		- users have an option to go back to the other questions and option to change
+		- setting button has a customization feature where users can choose what type of exam, is it timed or not and how many questions will the users will take (type of exam: question and answr, multiple choise, true or false ect.. ewhat ever can be applicable that u can try, timed: user can set time of their taking test eg 1sec to no time, user will also have an option to choose how many question they wanna take) 
+		Hell mode
+		- in hell mode, users can only see their scorem wrong/correct asnwers and result after taking the test
+
+Answer Key:
+	-upon clicking you'll see the questions and their answer
+	- user have an option to check it 2 by 1, show all , or card flip, and also have a search feature so they can find if they have some specific question in mind to look for
+
+
+for UI, well have to make it available for windows and phone, cause some of use will review on phone while walking hahaha
+we'll also have dark mode
+
+ 
