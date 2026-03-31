@@ -1,0 +1,5000 @@
+{
+  "FA1": [
+    {
+      "type": "multiple_choice",
+      "question": "What is Software?",
+      "pts": 1,
+      "options": [
+        "Software that is not commissioned",
+        "by a specific customer to meet their",
+        "own needs.",
+        "Software that is commissioned by a",
+        "specific customer to meet their own",
+        "needs.",
+        "systems that are marketed and sold",
+        "to any customer who wishes to buy",
+        "them.",
+        "The product that software",
+        "professionals build and then",
+        "support over the long term."
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It focus on a limited marketplace to address",
+      "pts": 1,
+      "options": [
+        "mass consumer market. (word processing,",
+        "graphics, database management)",
+        "Embedded software",
+        "System software",
+        "Application software",
+        "Product-line software",
+        "27/01/2026, 14:27"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Software should not make wasteful use of",
+      "pts": 1,
+      "options": [
+        "system resources such as memory and",
+        "processor cycles.",
+        "Maintainability",
+        "Efficiency",
+        "Acceptability"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Acceptability software must be acceptable to the type of users for which it is designed.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Acceptability software must be acceptable to the type of users for which it is not- designed.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Tools provide automated or semi- automated support for the process and methods.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Technical reviews: assesses will not work products to uncover and remove errors before going to the next activity.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Requirements are hazy or nonexistent.",
+      "pts": 0,
+      "options": [
+        "stakeholders are unsure of what they want.",
+        "Problem",
+        "Problem Context",
+        "Initial Context",
+        "Solution",
+        "27/01/2026, 14:27"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A generic standard that applies to any",
+      "pts": 1,
+      "options": [
+        "organization that wants to improve the",
+        "overall quality of the products, systems, or",
+        "services that it provides.",
+        "SPICE—The SPICE (ISO/",
+        "IEC15504)",
+        "CMM-Based Appraisal for Internal",
+        "Process Improvement (CBA IPI)",
+        "ISO 9001:2000 for Software"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A standard defines a set of requirements",
+      "pts": 1,
+      "options": [
+        "for software process assessment.",
+        "CMM-Based Appraisal for Internal",
+        "Process Improvement (CBA IPI)",
+        "ISO 9001:2000 for Software",
+        "SPICE—The SPICE (ISO/",
+        "IEC15504)"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Concurrent Model?",
+      "pts": 1,
+      "options": [
+        "controllable as it demands",
+        "27/01/2026, 14:27",
+        "considerable risk assessment",
+        "expertise",
+        "Good to develop large-scale system",
+        "as software evolves as the process",
+        "progresses and risk should be",
+        "understood and properly reacted to",
+        "applicable to all types of",
+        "software development and",
+        "provides an accurate picture",
+        "of the current state of a",
+        "project."
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "External specifications for each component",
+      "pts": 0,
+      "options": [
+        "to be constructed are developed and a",
+        "component design is created.",
+        "Planning",
+        "Low-Level Design",
+        "High-Level Design",
+        "Development"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "The component level design is refined and reviewed. Code is generated, reviewed, compiled, and tested 27/01/2026, 14:27",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Software is embodied knowledge that is initially disappeared, tacit and complete.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Parallel process flow executes one or more activities in parallel with other activities.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A stand-alone programs for specific needs.",
+      "pts": 1,
+      "options": [
+        "27/01/2026, 14:27",
+        "Application software",
+        "Mobile Software",
+        "System software",
+        "Engineering/scientific software"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The establishment and use of sound",
+      "pts": 1,
+      "options": [
+        "engineering principles in order to obtain",
+        "economically software that is reliable and",
+        "works efficiently on real machines.",
+        "System Programming",
+        "Software engineering",
+        "System Engineering",
+        "Software Programming"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Software Process is a collection of the unfamiliar activities, actions and tasks that are not performed when some work product is to be created.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "27/01/2026, 14:27 Communication: communicate with customer to understand objectives and gather requirements.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Deployment: Delivered to the customer who evaluates the products and provides feedback based on the evaluation.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Deployment: Delivered to the customer who not evaluates the products and will not provide feedback based on the evaluation.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The costs of software on a PC are often",
+      "pts": 1,
+      "options": [
+        "greater than the hardware cost.",
+        "27/01/2026, 14:27",
+        "Software costs",
+        "System costs",
+        "Software engineering"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A description of the prototyping process",
+      "pts": 0,
+      "options": [
+        "would be presented here.",
+        "Problem",
+        "Initial Context",
+        "Solution"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Generic Process Model?",
+      "pts": 1,
+      "options": [
+        "process framework for",
+        "software engineering defines",
+        "five framework activities-",
+        "communication, planning,",
+        "modeling, construction, and",
+        "deployment.",
+        ". A framework for the activities,",
+        "actions, and tasks that are required",
+        "to build high-quality software.",
+        "It is not set of umbrella activities-",
+        "27/01/2026, 14:27",
+        "project tracking and control, risk",
+        "management, quality assurance,",
+        "configuration management,",
+        "technical reviews, and others are",
+        "applied throughout the process."
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Measures and metrics should provide guidance for modifying the process to improve its effectiveness.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Software is embodied knowledge that is initially dispersed, tacit and incomplete.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "A road map that helps you create a timely, high-quality results.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Stage patterns defines a problem associated with a framework activity for the process.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It resides within a product or system. (key",
+      "pts": 1,
+      "options": [
+        "pad control of a microwave oven, digital",
+        "function of dashboard displays in a car)",
+        "System software",
+        "Embedded software",
+        "Application Software",
+        "Engineering/scientific software"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Network centric software. As web 2.0",
+      "pts": 1,
+      "options": [
+        "emerges, more sophisticated computing",
+        "environments is supported integrated with",
+        "remote database and business",
+        "applications.",
+        "27/01/2026, 14:27",
+        "Product-line software",
+        "Embedded software",
+        "WebApps",
+        "Application software"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Communication: will not communicate with customer to understand objectives and gather requirements.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Why Software is Important?",
+      "pts": 1,
+      "options": [
+        "27/01/2026, 14:27",
+        "More and more systems are",
+        "software not controlled",
+        "(transportation, medical,",
+        "telecommunications, military,",
+        "industrial, entertainment,)",
+        "Software engineering is concerned",
+        "without theories, methods and tools",
+        "for professional software",
+        "development.",
+        "The economies of ALL",
+        "developed nations are",
+        "dependent on software."
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It concerned with cost-effective software",
+      "pts": 1,
+      "options": [
+        "development.",
+        "Software System",
+        "Software engineering",
+        "System Costs",
+        "Software Costs"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Planning this activity carry the requirements and create both size and resource are not estimates. In addition, a defect estimate (the number of defects projected for the work) is made. 27/01/2026, 14:27",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "High-level design is an internal requirement specification for each component to be constructed are developed and a component design is not created.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Software development is essentially an iterative social learning process, and the outcome is “software capital”.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "SP defines the approach that is not taken as software is engineered system.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Stage patterns defines a problem associated without a framework activity for the process.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Define Open source?",
+      "pts": 1,
+      "options": [
+        "pervasive, ubiquitous, distributed",
+        "computing due to wireless",
+        "networking. How to allow mobile",
+        "devices, personal computer,",
+        "enterprise system to communicate",
+        "across vast network.",
+        ".” free” source code opens to",
+        "the computing community (a",
+        "blessing, but also a potential",
+        "curse!)",
+        "the Web as a computing engine.",
+        "How to architect simple and",
+        "sophisticated applications to target",
+        "end-users worldwide.",
+        "27/01/2026, 14:27"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Method cannot provides technical how-to’s for building software.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is data structures?",
+      "pts": 1,
+      "options": [
+        "executed provide desired features,",
+        "function, and performance",
+        "enable the programs to",
+        "adequately store and",
+        "manipulate information",
+        "describes the operation and use of",
+        "the programs."
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It is a mode of communication between",
+      "pts": 1,
+      "options": [
+        "stakeholders and the software team has",
+        "been established",
+        "problem",
+        "Initial context",
+        "Solution",
+        "27/01/2026, 14:27"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Flow executes each of the five activities in",
+      "pts": 1,
+      "options": [
+        "sequence.",
+        "iterative process",
+        "linear process",
+        "evolutionary process"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "A number of software process re- assessment mechanisms that enable us to determine the immaturity of the software process.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "SP defines the approach that is taken as software is engineered. 27/01/2026, 14:27",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Defines the sequence of framework",
+      "pts": 1,
+      "options": [
+        "activities that occur with the process, even",
+        "when the overall flow of activities is iterative",
+        "in nature.",
+        "Stage Patterns",
+        "Task patterns",
+        "Phase patterns"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Systems that are marketed and sold to any",
+      "pts": 1,
+      "options": [
+        "customer who wishes to buy them.",
+        "Data consolidation",
+        "Data structures",
+        "Customized products",
+        "Generic products"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Maintainability Software should be not- 27/01/2026, 14:27 written in such a way so that it can evolve to meet the unchanging needs of customers",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Measures and centimeter should not provide guidance for modifying the process to improve its effectiveness.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Defines a problem associated with a",
+      "pts": 1,
+      "options": [
+        "framework activity for the process. It",
+        "includes multiple task patterns as well.",
+        "Stage Patterns",
+        "Task patterns",
+        "Phase patterns"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "27/01/2026, 14:27",
+      "pts": 1,
+      "options": [
+        "What is AI?",
+        "stand-alone programs for specific",
+        "needs",
+        "focus on a limited marketplace to",
+        "address mass consumer market.",
+        "software uses non-numerical",
+        "algorithm to solve complex",
+        "problem."
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Process layer as the foundation defines a framework with activities for effective delivery of software engineering technology.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Planning: creates a “Sketch” defines the work by describing the tasks, risks and resources, work products and work schedule.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is a Definition of Software Process?",
+      "pts": 1,
+      "options": [
+        "a set of umbrella activities- project",
+        "tracking and control, risk",
+        "management, quality assurance,",
+        "configuration management,",
+        "technical reviews, and others are",
+        "applied throughout the process",
+        "process framework for software",
+        "engineering defines five framework",
+        "activities-communication, planning,",
+        "modeling, construction, and",
+        "deployment.",
+        "A framework for the",
+        "activities, actions, and tasks",
+        "that are required to build",
+        "high-quality software."
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Planning this activity isolates requirements and develops both size and resource estimates. In addition, a defect estimate (the number of defects projected for the work) is made.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Flow executes the activities in a circular",
+      "pts": 1,
+      "options": [
+        "manner.",
+        "evolutionary process",
+        "linear process",
+        "27/01/2026, 14:27",
+        "iterative process"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Iterative process flow repeats one or more of the activities before proceeding to the next.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Evolutionary process flow executes the activities in a non-circular manner.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Open world computing?",
+      "pts": 1,
+      "options": [
+        "pervasive, ubiquitous,",
+        "distributed computing due to",
+        "wireless networking. How to",
+        "allow mobile devices,",
+        "personal computer,",
+        "27/01/2026, 14:27",
+        "enterprise system to",
+        "communicate across vast",
+        "network.",
+        "the Web as a computing engine.",
+        "How to architect simple and",
+        "sophisticated applications to target",
+        "end-users worldwide.",
+        ".” free” source code opens to the",
+        "computing community (a blessing,",
+        "but also a potential curse!)"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Software quality assurance: defines and conduct activities to ensure quality.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Technical reviews: assesses work products to uncover and remove errors before going to the next activity.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "27/01/2026, 14:27 Tools cannot provide automated or semi- automated not support for the process and methods.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Planning: creates a “map” defines the work by describing the tasks, risks and resources, work products and work schedule.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Software project tracking and control: assess progress against the plan and take actions to maintain the schedule.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Measurement: define and collects process, 27/01/2026, 14:27 project, and product measures to ensure stakeholder’s needs are met.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A software prototype that identifies basic",
+      "pts": 0,
+      "options": [
+        "requirements. (modes of interaction,",
+        "computational features, processing",
+        "functions) is approved by stakeholders.",
+        "Problem Context",
+        "Resulting context",
+        "Solution Context",
+        "Related Patterns"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Parallel process flow is not executes one or more activities in parallel without other activities.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Software development is essentially an iterative social learning process, and the outcome is “software design”.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Formal verification methods are applied to uncover errors in the design.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "27/01/2026, 14:27 Iterative process flow cannot repeat one or more of the activities after proceeding to the next.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Software Process a process is a collection of activities, actions and tasks that are performed when some work product is to be created.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "A number of software process assessment mechanisms that enable us to determine the maturity of the software process.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Linear process flow executes each of the four activities in sequence",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Risk management: assesses risks that may not affect the outcome and quality.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It provides a diagnostic technique for",
+      "pts": 1,
+      "options": [
+        "27/01/2026, 14:27",
+        "assessing the relative maturity of a",
+        "software organization; uses the SEI CMM",
+        "as the basis for the assessment [Dun01]",
+        "SPICE—The SPICE (ISO/",
+        "IEC15504)",
+        "CMM-Based Appraisal for",
+        "Internal Process",
+        "Improvement (CBA IPI)",
+        "ISO 9001:2000 for Software"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "A road map that helps you create a timely, low-quality results.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Risk management: assesses risks that may affect the outcome and quality.",
+      "pts": 1,
+      "answer": "True"
+    }
+  ],
+  "FA2": [
+    {
+      "type": "multiple_choice",
+      "question": "_________ occurs both before and after",
+      "pts": 1,
+      "options": [
+        "coding as refactoring is encouraged",
+        "XP Design",
+        "XP Testing",
+        "XP Program",
+        "XP Coding"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Speculation project is initiated and adaptive cycle planning is conducted.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Testing and documentation are on-going as the product is not constructed.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Organizing a team so that it is in control of the work performed.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "The development guidelines stress delivery over analysis and design although these activates are discouraged, and active and has no continuous communication between developers and customers",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "27/01/2026, 14:49 The modern business environment is fast- paced and ever-changing.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "The modern business environment is slow- paced and ever-changing.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The most efficient and effective method of",
+      "pts": 1,
+      "options": [
+        "conveying information to and within a",
+        "development team.",
+        "Face-to-face",
+        "Motivated Individual",
+        "satisfy customer"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "This is the art of maximizing the amount of",
+      "pts": 0,
+      "options": [
+        "work not done – is essential.",
+        "27/01/2026, 14:49",
+        "Working software",
+        "Self–organizing",
+        "Simplicity",
+        "Efficiency and Effectiveness"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Design of data is as important as design of processing functions.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Design of data is as important as design of processing non-functions.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "User interface design should be not tuned to the needs of the end-user. However, in every case, it should distress ease of use.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Components should be loosely coupled to one another and to the external environment.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Design representations (models) should not be hardly understandable.",
+      "pts": 0,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "The construction activity encompasses a set of coding and testing tasks that lead to operational software that is ready for delivery to the customer or end-user.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Lots of things can go wrong as software is",
+      "pts": 1,
+      "options": [
+        "being developed.",
+        "Assess Risk",
+        "Build an effective team",
+        "Manage Change"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Stated in a more technical manner,",
+      "pts": 1,
+      "options": [
+        "analysis and design should always",
+        "emphasize separation of concerns (SoC).",
+        "27/01/2026, 14:49",
+        "Strive for consistency",
+        "Understand the use of abstraction",
+        "Divide and conquer"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The best architectures, requirements, and",
+      "pts": 1,
+      "options": [
+        "designs emerge from ______ teams.",
+        "Simplicity",
+        "working software",
+        "self–organizing"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "For difficult design problems, suggests the",
+      "pts": 1,
+      "options": [
+        "creation of ______ a design prototype for",
+        "that portion is implemented and evaluated.",
+        "self-motivating",
+        "spike solution",
+        "self–organizing",
+        "refactoring"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "27/01/2026, 14:49",
+      "pts": 1,
+      "options": [
+        "Encourages _______ an iterative",
+        "refinement of the internal program design.",
+        "spike solution",
+        "refactoring",
+        "self–organizing"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "All unit tests are executed daily and ideally",
+      "pts": 1,
+      "options": [
+        "should be automated.",
+        "XP Testing",
+        "XP Coding",
+        "XP Design"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "A software development method Originally proposed by Schwaber and Beedle (an activity occurs during a rugby match) in early 1992.",
+      "pts": 0,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "27/01/2026, 14:49 Testing and documentation are on-going as the product is constructed.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Separation of concerns (Principle #1)",
+      "pts": 1,
+      "options": [
+        "establishes a philosophy for software.",
+        "Look for patterns.",
+        "Build software that exhibits",
+        "effective modularity",
+        "Take notes and report",
+        "Focus on the transfer of information"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "The functions that the software performs must be defined.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "The functions that the software performs must be not defined.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Design should not be traceabled to the requirements model 27/01/2026, 14:49",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Component-level design should be functionally independent.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Process is not a religious experience and",
+      "pts": 1,
+      "options": [
+        "dogma has no place in it.",
+        "Focus on quality at every step",
+        "be ready to adapt",
+        "Be Agile"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Testing principles and concepts lead to the design of tests that systematically cover different classes of not free for errors and to do so with a minimum amount of time and effort. 27/01/2026, 14:49",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is “Agility”?",
+      "pts": 1,
+      "options": [
+        "the cost of change increases",
+        "nonlinearly as a project progresses.",
+        "the art of maximizing the amount of",
+        "work not done – is essential.",
+        "The development guidelines",
+        "stress delivery over analysis",
+        "and design although these",
+        "activates are not",
+        "discouraged, and active and",
+        "continuous communication",
+        "between developers and",
+        "customers."
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "_________ customer is an active member",
+      "pts": 1,
+      "options": [
+        "of XP team, changes to requirements are",
+        "requested informally and frequently.",
+        "27/01/2026, 14:49",
+        "Requirements volatility",
+        "Conflicting customer needs",
+        "Lack of formal design",
+        "Lack of program design"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "“demos” are delivered to the customer with the time-box allocated. May not contain all functionalities.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "“demos” are not delivered to the customer with the time-box allocated. May not contain all functionalities.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It is our highest priority through early and",
+      "pts": 1,
+      "options": [
+        "continuous delivery of valuable software.",
+        "27/01/2026, 14:49",
+        "deliver working software frequently",
+        "satisfies the customer",
+        "Welcome changing"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Effective commitment in structure and attitudes among all team members, technological and business people, software engineers and managers.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Agile processes harness change for the",
+      "pts": 1,
+      "options": [
+        "customer's competitive advantage.",
+        "satisfies the employer",
+        "satisfies the customer",
+        "Welcome changing",
+        "eliver working software frequently"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Every communication meeting should have",
+      "pts": 1,
+      "options": [
+        "27/01/2026, 14:49",
+        "a leader (a facilitator) to keep the",
+        "conversation moving in a productive",
+        "direction.",
+        "Prepare for customer needs",
+        "Listen",
+        "Someone should facilitate",
+        "the activity",
+        "Prepare you communicate"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The more people involved in any",
+      "pts": 1,
+      "options": [
+        "communication, the more likely that",
+        "discussion will bounce from one topic to the",
+        "next.",
+        "Strive for collaboration",
+        "Take notes and report",
+        "Stay focused, modularize",
+        "your discussion",
+        "Take notes and document decisions"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Design models represent characteristics of the software that help practitioners to construct it effectively. 27/01/2026, 14:49",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Design representations (models) should be easily understandable.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The exit condition for every process activity,",
+      "pts": 1,
+      "options": [
+        "action, and task should focus on the quality",
+        "of the work product that has been",
+        "produced.",
+        "be ready to adapt",
+        "Focus on quality at every",
+        "step",
+        "Be Agile"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "The construction activity encompasses a set of coding and testing tasks that is not 27/01/2026, 14:49 lead to operational software that is ready for delivery to the customer or end-user.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "This is different customers' needs need to",
+      "pts": 1,
+      "options": [
+        "be assimilated. Different vision or beyond",
+        "their authority.",
+        "Conflicting customer needs",
+        "Lack of formal design",
+        "Lack of program design",
+        "Requirements volatility"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "_________ are used to multiply their talent",
+      "pts": 1,
+      "options": [
+        "and creative output beyond absolute",
+        "number (1+1>2).",
+        "Collaboration",
+        "Speculation",
+        "Efficiency",
+        "Learning"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "27/01/2026, 14:49 The only really important work product is an operational “software increment” that is delivered.",
+      "pts": 0,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It is from a couple of weeks to a couple of",
+      "pts": 1,
+      "options": [
+        "months, with a preference to the shorter",
+        "timescale.",
+        "satisfies the customer",
+        "Welcome changing",
+        "satisfies the employer",
+        "deliver working software",
+        "frequently"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Conventional wisdom is that the cost of change increases nonlinearly as a project progresses.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "The most efficient and effective method of conveying information to and within a development team is face–to–face conversation",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "This is the primary measure of progress.",
+      "pts": 1,
+      "options": [
+        "Simplicity",
+        "Efficiency and Effectiveness",
+        "Self–organizing",
+        "working software"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "The information domain of a problem must be represented and understood.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "27/01/2026, 14:49 The models that no information, non- function, and behavior must be partitioned in a manner that uncovers detail in a layered (or hierarchical) fashion.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "The analysis task should move from essential information toward implementation detail.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The process model you choose is",
+      "pts": 1,
+      "options": [
+        "prescriptive or agile, the basic tenets of",
+        "agile development should govern your",
+        "approach.",
+        "Be Agile",
+        "be ready to adapt",
+        "Focus on quality at every step",
+        "27/01/2026, 14:49"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "The design should be developed iteratively. With each iteration, the designer should strive for greater simplicity.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Effective communication in structure and attitudes among all team members, technological and business people, software engineers and managers.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Our highest priority is to satisfy the customer through early and continuous delivery of non-valuable software.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Design models represent characteristics of the software that will not help practitioners to construct it effectively.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "The analysis task should not move from essential information toward implementation detail",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Component-level design should be non- functionally independent.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "27/01/2026, 14:49 The design should be developed iteratively. With each iteration, the designer should not strive for greater simplicity.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Testing principles and concepts lead to the design of tests that systematically uncover different classes of errors and to do so with a minimum amount of time and effort.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Speculation project is not initiated and adaptive cycle planning is not conducted.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Delivers multiple ‘software increments’, deliver an operational prototype or portion 27/01/2026, 14:49 of an OS to collect customer feedback for adaption.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "The most efficient and ineffective method of conveying information too and within a development team is face–to– ear conversation.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Design should be traceable to the requirements model. 27/01/2026, 14:49",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Components should be loosely coupled to other components and to the internal environment.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Software engineering process and practice",
+      "pts": 1,
+      "options": [
+        "are important, but the bottom line is people.",
+        "Assess Risk",
+        "Manage Change",
+        "Build an effective team"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "A software development method Originally proposed by Schwaber and Beedle (an activity occurs during a rugby match) in early 1990. 27/01/2026, 14:49",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "______ provides everyone with a road map",
+      "pts": 1,
+      "options": [
+        "for getting to a successful destination.",
+        "Software Application",
+        "Software Practice",
+        "Software Process",
+        "Software Engineer"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "The information domain of a problem must be not represented and understood.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Define Conventional wisdom.",
+      "pts": 0,
+      "options": [
+        "the cost of change increases",
+        "nonlinearly as a project progresses.",
+        "the art of maximizing the amount of",
+        "27/01/2026, 14:49",
+        "work not done – is essential.",
+        "The development guidelines",
+        "stress delivery over analysis and",
+        "design although these activates",
+        "are not discouraged, and active",
+        "and continuous communication",
+        "between developers and",
+        "customers."
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Emphasize an incremental delivery strategy as opposed to intermediate products that did not get working software to the customer as rapidly as feasible.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Conventional wisdom is that the cost of change decrease linear as a project progresses.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "27/01/2026, 14:49 Deliver working software frequently, from a couple of days to a couple of months, with no preference to the shorter timescale.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Give them the environment and support",
+      "pts": 1,
+      "options": [
+        "they need, and trust them to get the job",
+        "done.",
+        "Motivated Individual",
+        "Satisfy customer",
+        "Face-to-face",
+        "Satisfy employer"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "The only really important work product is an operational “software decrement” that is not delivered.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "The models that depict information, function, and behavior must be partitioned in a manner that uncovers detail in a layered (or hierarchical) fashion.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "The construction activity encompasses a set of coding and testing tasks that is not lead to operational software that is not readyfor delivery to the customer or end- user.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Recommends the construction of a unit test",
+      "pts": 0,
+      "options": [
+        "for a story before coding commences.",
+        "XP Design",
+        "XP Coding",
+        "XP Program",
+        "XP Testing"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The approach may be either formal or",
+      "pts": 1,
+      "options": [
+        "informal, but mechanisms must be",
+        "established to manage the way changes",
+        "are requested, assessed, approved and",
+        "implemented.",
+        "Build an effective team",
+        "27/01/2026, 14:49",
+        "Manage Change",
+        "Assess Risk"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Emphasize an incremental delivery strategy as opposed to intermediate products that gets working software to the customer as rapidly as feasible.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The process molds to the _______ and",
+      "pts": 1,
+      "options": [
+        "team, not the other way around.",
+        "self–organizing",
+        "working software",
+        "needs of people"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "______ is a broad array of principles,",
+      "pts": 0,
+      "options": [
+        "concepts, methods and tools that you must",
+        "consider as software is planned and",
+        "developed.",
+        "27/01/2026, 14:49",
+        "Software Practice",
+        "Software Process",
+        "Software Application",
+        "Software Engineer"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A familiar context makes software easier to",
+      "pts": 0,
+      "options": [
+        "use.",
+        "Understand the customer",
+        "Understand the use of abstraction",
+        "Divide and conquer",
+        "Strive for consistency"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "User interface design should be tuned to the needs of the end-user. However, in every case, it should stress ease of use.",
+      "pts": 1,
+      "answer": "False"
+    }
+  ],
+  "FA3": [
+    {
+      "type": "true_false",
+      "question": "Functional Requirements is a statements of services the system should provide, what the system should not react to particular inputs and what the system should not behave in particular situations.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Requirements engineering is the process of establishing the customer service but not requiring from the system and constraints.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "In practice, requirements and design are inseparable.",
+      "pts": 0,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "The requirements themselves are the descriptions of the system services and constraints that are non-generated during the requirements engineering process.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Requirements which are a consequence of organisational policies and procedures e.g. process standards used, implementation requirements, etc.",
+      "pts": 1,
+      "options": [
+        "Product requirements",
+        "Organisational requirements",
+        "External requirements"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Several different requirements may be expressed together.",
+      "pts": 0,
+      "options": [
+        "Requirements confusion",
+        "Lack of clarity",
+        "Requirements amalgamation"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "External Requirements which arise from factors which are external to the system and its development process e.g. interoperability requirements, legislative requirements, et.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Requirements Confusion Functional and non-functional requirements tend to be mixed-up.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "This is inevitable as requirements may serve a dual function.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Tabular specification used to supplement unnatural language.",
+      "pts": 0,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Requirements discovery the process of gathering information about the required and existing systems and distilling the user and system requirements from this information.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Formal or informal interviews with stakeholders are part of most RE processes.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Scenarios are real-life examples of how a system can be used.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Requirements management is the process of managing changing requirements during the requirements engineering process and system development.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "These interviews are based on pre- determined list of questions",
+      "pts": 1,
+      "options": [
+        "Open interviews",
+        "Effective interview",
+        "Closed interviews"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The requirements be implemented given available budget and technology.",
+      "pts": 1,
+      "options": [
+        "Completeness",
+        "Validity",
+        "Realism"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The requirements document and, where necessary, the system design and implementation, are modified.",
+      "pts": 1,
+      "options": [
+        "Change implementation",
+        "Change analysis and costing",
+        "Problem analysis and change"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Problems of requirements analysis stakeholders know what they really want.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Functional Requirements may state what the system should do in overall systematic view.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Requirements which specify that the delivered product must behave in a particular way e.g. execution speed, reliability, etc.",
+      "pts": 1,
+      "options": [
+        "External requirements",
+        "Product requirements",
+        "Organisational requirements"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Precision is difficult without making the document difficult to read.",
+      "pts": 1,
+      "options": [
+        "Requirements amalgamation",
+        "Lack of clarity",
+        "Requirements confusion"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Functional and non-functional requirements tend to be mixed-up.",
+      "pts": 0,
+      "options": [
+        "Requirements amalgamation",
+        "Requirements confusion",
+        "Lack of clarity"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "This might include graphical system models showing the relationships between the system components and the system and its environment.",
+      "pts": 1,
+      "options": [
+        "System Index",
+        "System evolution",
+        "System models"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "System Requirements Specification should describe the functional and nonfunctional requirements in more detail.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Requirement is a range from a high-level abstract statement of a service or of a system constraint to a detailed mathematical functional specification.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Organisational and political factors may not influence the system requirements.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Systems normally have a range of stakeholders.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Requirements management planning establishes the level of requirements management detail that is not required.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Using an executable model of the system to check requirements.",
+      "pts": 1,
+      "options": [
+        "Requirements review",
+        "Prototyping",
+        "Test-case generation"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "During this stage, the problem or the change proposal is analyzed to check that it is valid.",
+      "pts": 1,
+      "options": [
+        "Problem analysis and change",
+        "Change analysis and costing",
+        "Change implementation"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Effective Interview Be open-minded, avoid pre-conceived ideas about the requirements and not willing to listen to stakeholders.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Different stakeholders may have conflicting requirements.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Requirements engineering is the process of establishing the services that the customer requires from a system and the constraints under which it operates and is developed.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Functional Requirements?",
+      "pts": 1,
+      "options": [
+        "Often apply to the system as a",
+        "Defines what should be",
+        "Describe functionality or"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Software Requirements document?",
+      "pts": 1,
+      "options": [
+        "Is the official statement of",
+        "Applies to the system as a whole",
+        "Defines what should be"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "The requirements themselves are the descriptions of the system services and constraints that are generated during the requirements engineering process.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Organisational and political factors may influence the system requirements.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Groups related requirements and organises them into coherent clusters.",
+      "pts": 1,
+      "options": [
+        "Requirements discovery",
+        "Prioritisation and negotiation",
+        "Requirements classification"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Requirements elicitation and analysis sometimes called requirements elicitation or requirements discovery.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Non-Functional Requirements often apply to the system as a whole rather than individual features or services.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Structured specifications this works well for some types of requirements e.g. requirements for embedded control system but is sometimes too rigid for writing business system requirements.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Requirements reviews systematic manual analysis of the requirements.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Requirements management planning establishes the level of requirements management detail that is required.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The system provides the functions which best support the customer’s needs.",
+      "pts": 1,
+      "options": [
+        "Validity",
+        "Consistency",
+        "Completeness"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The requirements can be checked.",
+      "pts": 1,
+      "options": [
+        "Validity",
+        "Verifiability",
+        "Realism"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Non-Functional Requirements often apply to the system as one rather than dual features or services.",
+      "pts": 0,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Natural Language is a requirements written using numbered sentences and each sentence should express two requirements.",
+      "pts": 0,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "These define system properties and constraints e.g. reliability, response time and storage requirements. Constraints are I/O device capability, system representations, etc.",
+      "pts": 1,
+      "options": [
+        "System Requirements",
+        "Non-Functional",
+        "Functional Requirements"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Requirement is a range from a low-level abstract statement of a service or of a system constraint to a detailed mathematical functional specification.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "These interviews where various issues are explored with stakeholders.",
+      "pts": 1,
+      "options": [
+        "Open interviews",
+        "Closed interviews",
+        "Effective interview"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Be open-minded, avoid pre-conceived ideas about the requirements and are willing to listen to stakeholders.",
+      "pts": 1,
+      "options": [
+        "Effective interview",
+        "Open interviews",
+        "Closed interviews"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Requirements are documented and input into the next round of the spiral.",
+      "pts": 1,
+      "options": [
+        "Requirements Specification",
+        "Requirements Elicitation",
+        "Requirements Discovery"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Domain Requirements is constraints on the system from the domain of operation.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A statement using some measure that can be objectively tested.",
+      "pts": 1,
+      "options": [
+        "Non-Functional Requirement",
+        "Functional Requirement",
+        "Verifiable non-functional"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "User Requirement is a statements in natural language plus diagrams of the services the system provides and its operational constraints.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Systems normally have a range of customers.",
+      "pts": 0,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Requirements reviews is a non-systematic manual analysis of the requirements.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Scope of Ethnography?",
+      "pts": 1,
+      "options": [
+        "Requirements that are",
+        "The problem with ethnography is",
+        "Social and organisational factors of"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Requirements elicitation and analytics sometimes called requirements elicitation or requirements discovery.",
+      "pts": 0,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Natural Language is a requirements written using numbered sentences and each sentence should express one requirements.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Requirements which arise from factors which are external to the system and its development process e.g. interoperability requirements, legislative requirements, etc",
+      "pts": 1,
+      "options": [
+        "Organisational requirements",
+        "External requirements",
+        "Product requirements"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Requirements are expressed in the language of the application domain",
+      "pts": 1,
+      "options": [
+        "Understandability",
+        "Implicitness",
+        "Product requirements"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Formal or informal interviews with stakeholders are not part of most RE processes.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Developing tests for requirements to check testability.",
+      "pts": 1,
+      "options": [
+        "Test-case generation",
+        "Prototyping",
+        "Requirements review"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The process of gathering information about the required and existing systems and distilling the user and system requirements from this information.",
+      "pts": 1,
+      "options": [
+        "Requirements Elicitation",
+        "Requirements Specification",
+        "Requirements discovery"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The effect of the proposed change is assessed using traceability information and general knowledge of the system requirements.",
+      "pts": 1,
+      "options": [
+        "Change analysis and costing",
+        "Change implementation",
+        "Problem analysis and change"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Functional Requirements is a statements of services the system should provide, how the system should react to particular inputs and how the system should behave in particular situations.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Structured specifications is not works well for some types of requirements e.g. requirements for embedded control system but is sometimes too rigid for writing business system requirements.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Problems of requirements analysis stakeholders doesn’t know what they really want.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "System Requirement is a not structured document setting out detailed descriptions of the system’s functions, services and operational constraints",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Functional Requirements may state what the system should not do.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Natural language specification requirements are written as natural language sentences supplemented by diagrams and tables.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Different stakeholders and customers may have conflicting requirements",
+      "pts": 0,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "This should describe the functional and nonfunctional requirements in more detail.",
+      "pts": 1,
+      "options": [
+        "User requirements definition",
+        "System requirements",
+        "Introduction"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Requirements management is the process of managing changing views and plans during the requirements engineering process and system development.",
+      "pts": 0,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "In practice, requirements and design are separable.",
+      "pts": 0,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Ambiguous requirements may be interpreted in different ways by developers and users.",
+      "pts": 1,
+      "options": [
+        "Requirements engineering",
+        "Requirements imprecision",
+        "System Requirement"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Scenarios?",
+      "pts": 1,
+      "options": [
+        "Prompt the interviewee to get",
+        "are real-life examples of how",
+        "Interaction is with system"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "External Requirements which not arise from factors which are external to the system and its development process e.g. interoperability requirements, legislative requirements, et.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Scene in the system are real-life examples of how a system can be used.",
+      "pts": 0,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "System Requirements Specification should not describe the functional and nonfunctional requirements in more detail.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Ethnography?",
+      "pts": 1,
+      "options": [
+        "Sequence diagrams may be used to",
+        "A social scientist spends a",
+        "A set of use cases should describe"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Requirements discovery the process of gathering information from customer and existing systems.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "System Requirement is structured document setting out detailed descriptions of the system’s functions, services and operational constraints.",
+      "pts": 1,
+      "answer": "True"
+    }
+  ],
+  "FA4": [
+    {
+      "type": "multiple_choice",
+      "question": "It show how the system reacts to internal and external events",
+      "pts": 1,
+      "options": [
+        "State diagrams",
+        "Class Diagrams",
+        "Activity diagrams"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "These reveal how the system being developed is used in broader business processes.",
+      "pts": 1,
+      "options": [
+        "Process models",
+        "UML activity diagrams",
+        "Context Models"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "This software display the organization of a system in terms of the components that make up that system and their relationships",
+      "pts": 1,
+      "options": [
+        "Structural models",
+        "System Structure",
+        "Sequence diagrams"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Sequence diagrams which show interactions between actors and the system and between system components.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A model the interactions between a system and its environment, or between the components of a system.",
+      "pts": 1,
+      "options": [
+        "external perspective",
+        "structural perspective",
+        "interaction perspective"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Context Models they show what lies inside the system boundaries.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "System boundaries are not established to define what is inside and what is outside the system.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "UML activity diagrams it may be used to define business process models.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "UML activity diagrams it may not use to define business process models.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Localise safety-critical features in a small number of sub-systems.",
+      "pts": 1,
+      "options": [
+        "Security",
+        "Safety",
+        "Performance"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Layered architecture?",
+      "pts": 1,
+      "options": [
+        "Organises the system into a",
+        "Distributed system model which",
+        "is a stylized description of good"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Software Architecture?",
+      "pts": 1,
+      "options": [
+        "is concerned with the way that an",
+        "The output of design process",
+        "The design process for identifying"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "These are transaction-based systems as interaction with these systems generally involves database transactions.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "The database server moves information to and from the database and handles transaction management.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "The database server doesn’t move information to and from the database and handles transaction management.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "A syntax tree, which is an internal structure representing the program being compiled.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "A code generator that ‘walks’ the syntax tree and generates abstract machine code.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It helps the analyst to understand the functionality of the system and models are used to communicate with customers.",
+      "pts": 1,
+      "options": [
+        "System perspectives",
+        "System modeling",
+        "Graphical models"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "External perspective where you model the context or environment of the system.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Interaction perspective where you model the context or environment of the system.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Activity diagrams shows the activities involved in a process or in data processing.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Context Models simply show the other systems in the environment, not how the system being developed is used in that environment.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Process models these reveal how not the system being developed is used in broader business processes.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Data-centred applications that process user requests and update information in a system database.",
+      "pts": 1,
+      "options": [
+        "Data processing applications",
+        "Event processing systems",
+        "Transaction processing"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "A lexical analyzer, which takes input language tokens and converts them to an internal form.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "A lexical analyzer, which takes output language tokens and converts them to an internal form.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "A symbol table, which holds information about the names of entities (variables, class names, object names, etc.) used in the text that is being translated.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Semantic analyzer that uses information from the syntax tree and the symbol table to check the semantic correctness of the output language text.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Process view which shows how, at run- time, the system is composed of interacting processes.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Context Models?",
+      "pts": 1,
+      "options": [
+        "they show what lies outside",
+        "Models should be an accurate",
+        "Models have to be both correct and"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "This is important as it helps to identify user requirements.",
+      "pts": 1,
+      "options": [
+        "Modeling user interaction",
+        "Modeling component interaction",
+        "Modeling system-to-system"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "System modeling is the process of developing abstract models of a system, with each model presenting a different view or perspective of that system.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "State diagrams it shows how the system not reacts to internal and external events.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Information systems have a generic architecture that can be organised as a layered architecture.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "A syntax analyzer, which checks the syntax of the language being translated.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Architecture may be used as a focus of discussion by system stakeholders.",
+      "pts": 1,
+      "options": [
+        "Stakeholder communication",
+        "Large-scale reuse",
+        "System analysis"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It may be used to define business process models.",
+      "pts": 1,
+      "options": [
+        "Context Models",
+        "UML activity diagrams",
+        "Process models"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "External perspective where you model the interactions between a system and its environment, or between the components of a system.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Context Models they show what lies outside the system boundaries.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "System boundaries are established to define what is inside and what is outside the system.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Context Models simply not show the other systems in the environment, not how the system being developed is used in that environment.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Modeling user interaction this is important as it helps to identify user requirements.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "This show the activities involved in a process or in data processing.",
+      "pts": 1,
+      "options": [
+        "Case diagrams",
+        "Activity diagrams",
+        "Sequence diagrams"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It show the object classes in the system and the associations between these classes.",
+      "pts": 1,
+      "options": [
+        "Class Diagrams",
+        "Activity diagrams",
+        "State diagrams"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "At this level, we are concerned with the way that an individual program is decomposed into components",
+      "pts": 1,
+      "options": [
+        "Architecture in the small",
+        "Architecture in the large",
+        "Architecture in the medium"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "The web server is irresponsible for all user communications, with the user interface implemented using a web browser.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The architecture may be reusable across a range of systems.",
+      "pts": 1,
+      "options": [
+        "System analysis",
+        "Stakeholder communication",
+        "Large-scale reuse"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Localize critical operations and minimize communications. Use large rather than fine-grain components.",
+      "pts": 1,
+      "options": [
+        "Safety",
+        "Security",
+        "Performance"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It helps us understand if a proposed system structure is likely to deliver the required system performance and dependability",
+      "pts": 1,
+      "options": [
+        "Modeling user interaction",
+        "Modeling component",
+        "Modeling system-to-system"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Sequence diagrams?",
+      "pts": 1,
+      "options": [
+        "Use cases were developed originally",
+        "is part of the UML and are",
+        "use case may be people or other"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Activity diagrams shows the activities are not involved in a process or in data processing.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Sequence diagrams which not show interactions between actors and the system and between system components.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Class Diagrams it show the object classes in the system and the associations between system component.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Modeling user interaction this is not important as it helps to identify user requirements.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It show the interactions between a system and its environment.",
+      "pts": 1,
+      "options": [
+        "Case diagrams",
+        "Activity diagrams",
+        "Sequence diagrams"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It shows how the software is decomposed for development.",
+      "pts": 1,
+      "options": [
+        "development view",
+        "logical view",
+        "physical view"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Architectural Patterns?",
+      "pts": 1,
+      "options": [
+        "Used to model the interfacing of",
+        "Distributed system model which",
+        "is a stylized description of"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Information systems have a generic architecture that cannot be organised as a layered architecture.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Process view which shows how, at walk- time, the system is composed of interacting processes.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Means that analysis of whether the system can meet its non-functional requirements is possible.",
+      "pts": 1,
+      "options": [
+        "Stakeholder communication",
+        "Large-scale reuse",
+        "System analysis"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Process models these reveal how the system being developed is used in broader business processes.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "These are transaction-based systems as interaction with these systems generally not involves database transactions.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "A syntax analyzer, which checks the syntax of the language not translated.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It shows the system hardware and how software components are distributed across the processors in the system.",
+      "pts": 1,
+      "options": [
+        "logical view",
+        "process view",
+        "physical view"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Language processing systems applications where system actions depend on interpreting events from the system’s environment.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Information and resource management systems are now usually web-based systems where the user interfaces are implemented using a web browser.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "A syntax tree, which is an external structure representing the program being compiled.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "A code generator that ‘runs’ the syntax tree and generates abstract machine code.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Large-scale reuse the architecture may be reusable across a range of systems.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A model the context or environment of the system.",
+      "pts": 1,
+      "options": [
+        "interaction perspective",
+        "structural perspective",
+        "external perspective"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Case diagrams which not shows the interactions between a system and its environment.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Architectural Design?",
+      "pts": 1,
+      "options": [
+        "The design process for",
+        "An early stage of the system design",
+        "is concerned with the way that an"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "That process data in batches without explicit user intervention during the processing.",
+      "pts": 1,
+      "options": [
+        "Data processing applications",
+        "Transaction processing applications",
+        "Event processing systems"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Event processing systems applications where system actions depend on interpreting events from the system’s environment.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Use a layered architecture with critical assets in the inner layers.",
+      "pts": 1,
+      "options": [
+        "Safety",
+        "Performance",
+        "Security"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Case diagrams which shows the interactions between a system and its environment.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Use fine-grain, replaceable components.",
+      "pts": 1,
+      "options": [
+        "Availability",
+        "Safety",
+        "Maintainability"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Structural perspective where you model the organization of a system or the structure of the data that is not processed by the system.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Include redundant components and mechanisms for fault tolerance.",
+      "pts": 1,
+      "options": [
+        "Availability",
+        "Safety",
+        "Maintainability"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "State diagrams it shows how the system reacts to internal and external events.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Small-scale reuse the architecture may be reusable across a range of systems.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "These are established to define what is inside and what is outside the system.",
+      "pts": 1,
+      "options": [
+        "Process perspective",
+        "System boundaries",
+        "Interaction models"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It shows how, at run-time, the system is composed of interacting processes.",
+      "pts": 1,
+      "options": [
+        "logical view",
+        "physical view",
+        "process view"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Structural perspective where you model the organization of a system or the structure of the data that is processed by the system.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Interaction perspective model where you model the interactions between a system and its environment, or between the components of a system.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Class Diagrams it show the object classes in the system and the associations between these classes.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "The web server is responsible for all user communications, with the user interface implemented using a web browser.",
+      "pts": 0,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "System modeling is not the process of developing abstract models of a system, with each model presenting a different view or perspective of that system.",
+      "pts": 1,
+      "answer": "False"
+    }
+  ],
+  "FA5": [
+    {
+      "type": "true_false",
+      "question": "Weather stations are usually asked to report once per hour but this frequency may differ from one station to another and may be modified in the future.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Software design and implementation activities are invariably outerwear-leaved.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "The weather substation sends a summary of the system data that has been not collected from the instruments in the collection period to the weather information system.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Object identification is an iterative process. You are unlikely to get it right first time.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "This is the basic interface of the weather station to its environment.",
+      "pts": 1,
+      "options": [
+        "Subsystem Station",
+        "System Station",
+        "Weather Station",
+        "Forecast Station"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "One of the observer patterns is used when multiple displays of state are needed.",
+      "pts": 1,
+      "options": [
+        "Consequences",
+        "Name",
+        "Solution Description",
+        "Problem Description"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It Provides a standard way of accessing the elements in a collection, irrespective of how that collection is implemented (Iterator pattern).",
+      "pts": 1,
+      "options": [
+        "Object Problems",
+        "System Problems",
+        "Design Problems",
+        "Class Problems"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Concerned with exercising and observing product behaviour (dynamic verification)",
+      "pts": 1,
+      "options": [
+        "Software Inspections",
+        "Software Testing",
+        "User expectations"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It is where users or potential users of a system test the system in their own environment.",
+      "pts": 1,
+      "options": [
+        "Release Testing",
+        "User Testing",
+        "Development testing"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Each of these classes is an equivalence partition or domain where the program behaves in an equivalent way for each class member.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Test software with sequences which have two value.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The test expect the system to perform correctly using a given set of test cases that reflect the system’s expected use.",
+      "pts": 1,
+      "options": [
+        "Defect testing",
+        "Custom testing",
+        "Validating Testing"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Test-driven development (TDD) is an un- approach to program development in which you inter-leave testing and code development.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Regression test suite is developed incrementally as a program is developed.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Getting a product to market early may be more important than finding defects in the program.",
+      "pts": 1,
+      "options": [
+        "Marketing environment",
+        "User expectations",
+        "Software purpose"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "An interaction model is a dynamic model that shows how the system interacts with its environment as it is used.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Use a scenario based approach and identify objects based on what participates in what behaviour.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Implementation is not the process of realizing the design as a program.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "At this level, you directly reuse objects from a library rather than writing the code yourself.",
+      "pts": 1,
+      "options": [
+        "The component level",
+        "The abstraction level",
+        "The system level",
+        "The object level"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "At this level, you reuse entire application systems.",
+      "pts": 1,
+      "options": [
+        "The abstraction level",
+        "The object level",
+        "The system level",
+        "The component level"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "They require a lot of effort for development and maintenance of these models and, for small systems, this may not be cost- effective.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It is where you compare the result of the call with the expected result.",
+      "pts": 1,
+      "options": [
+        "Assertion Part",
+        "Setup Part",
+        "Call Part"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Guideline-based testing, where you cannot use testing guidelines to choose test cases.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Force invalid outputs to be generated",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "TDD was not introduced as part of agile methods such as Extreme Programming.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "System configure model is a not structural model that demonstrates the other subsystems in the environment of the system being developed.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "The weather forecast system is not establishing a satellite communication link with the weather station and requests transmission of the data.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Object identification is an looping process. You are unlikely to get it right second time.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "_______ show the objects and object classes and relationships between these entities.",
+      "pts": 0,
+      "options": [
+        "Sample Model",
+        "Design Model",
+        "Grand Model",
+        "Class Model"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It is show the sequence of object interactions that take place",
+      "pts": 1,
+      "options": [
+        "System Model",
+        "Dynamic Model",
+        "Subsystem Model",
+        "Sequence Model"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "System design and implementation is the stage in the software engineering process at which an executable software system is not developed.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Program Testing?",
+      "pts": 1,
+      "options": [
+        "defect testing can be deliberately",
+        "the system to perform correctly",
+        "intended to show that a"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Input data and output results often fall into similar classes where all members of a class are related.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Parameter interfaces Data passed from one method or procedure to another.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Every code segment that you write has at least two associated test so all code written has at least one test.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "The weather information system establishes a satellite communication link with the weather station and requests transmission of the data.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Response is the maximised the data is not sent to the weather information system.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "The weather station is composed of independent subsystems that communicate by broadcasting messages on a common infrastructure",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It shows how the design is organized into logically related groups of objects.",
+      "pts": 1,
+      "options": [
+        "Design Model",
+        "Subsystem Model",
+        "Dynamic Model",
+        "System Model"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "At this level, you don’t reuse software directly but use knowledge of successful abstractions in the design of your software.",
+      "pts": 1,
+      "options": [
+        "The object level",
+        "The abstraction level",
+        "The component level",
+        "The system level"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Structured object-oriented design processes involve developing a number of different system models.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It is where some or all of the components in a system are integrated and the system is tested as a whole.",
+      "pts": 1,
+      "options": [
+        "Unit testing",
+        "System Testing",
+        "Component Testing"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Force computation results to be too large or too small.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Force computation will not result to be too large or too small.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "System testing during development involves integrating components to create a version of the system and then testing the integrated system.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "User testing is essential, even when comprehensive system and not release testing have been carried out.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Concerned with analysis of the static system representation to discover problems (static verification)",
+      "pts": 1,
+      "options": [
+        "Software Testing",
+        "User expectations",
+        "Software Inspections"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A ______ is a way of reusing abstract knowledge about a problem and its solution.",
+      "pts": 1,
+      "options": [
+        "Class Pattern",
+        "System Pattern",
+        "Design Pattern",
+        "Object Pattern"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Software design and implementation is the stage in the software engineering process at which an executable software system is developed.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It is where several individual units are integrated to create composite components.",
+      "pts": 1,
+      "options": [
+        "System Testing",
+        "Component Testing",
+        "Unit testing"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "This means that there should be at least one test for every requirement in the requirements document.",
+      "pts": 0,
+      "options": [
+        "Test Software",
+        "Program Testing",
+        "Custom software"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "The sequence diagrams associated with the use case documents the components and interactions that are being tested.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Test-driven development (TDD) is an approach to program development in which you inter-leave testing and code development.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "The weather station sends a summary of the weather data that has been collected from the instruments in the collection period to the weather information system",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Once interactions between the system and it is local source have been not understood, you use this information for designing the system architecture.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Implementation is the process of realizing the design as a program",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "At this level the collections of objects and object classes that you reuse in application systems.",
+      "pts": 1,
+      "options": [
+        "The object level",
+        "The system level",
+        "The component level",
+        "The abstraction level"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Force invalid inputs to be generated",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Software components are often composite components that are made up of one interacting objects.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Parameter interfaces Data passed from two method or procedure to another.",
+      "pts": 0,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "User testing is essential, even when comprehensive system and release testing have been carried out.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It concern with rooting out undesirable system behavior such as system crashes, unwanted interactions with other systems, incorrect computations and data corruption.",
+      "pts": 1,
+      "options": [
+        "Custom software",
+        "Defect testing",
+        "Test software"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "TDD was introduced as part of agile methods such as Extreme Programming.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The test cases in defect testing can be deliberately obscure and need not reflect how the system is normally used.",
+      "pts": 1,
+      "options": [
+        "Validating Testing",
+        "Defect Testing",
+        "Custom Testing"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Users may have low expectations of certain kinds of software.",
+      "pts": 1,
+      "options": [
+        "Software purpose",
+        "User expectations",
+        "Marketing environment"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "System context model is a structural model that demonstrates the other systems in the environment of the system being developed.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Response is the summarized data is sent to the weather information system.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Software components are often composite components that are made up of several interacting objects.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "System testing during development involves integrating components not to create a version of the system and then testing the integrated system.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "The sequence diagrams associated with the use case documents the components and interactions that are not being tested.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Use a behavioural approach and identify objects based on what participates in what behaviour.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A _____ is a package of software controlled instruments which collects data, performs some data processing and transmits this data for further processing.",
+      "pts": 1,
+      "options": [
+        "Object Station",
+        "Weather Station",
+        "Class Station",
+        "Forecast Station"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Application domain objects that are ‘_____’ objects related to the instruments in the system.",
+      "pts": 1,
+      "options": [
+        "Software",
+        "System",
+        "Object",
+        "Hardware"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It is where the system is tested during development to discover bugs and defects.",
+      "pts": 1,
+      "options": [
+        "User Testing",
+        "Development testing",
+        "Release Testing"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It is where individual program units or object classes are tested.",
+      "pts": 1,
+      "options": [
+        "System Testing",
+        "Unit testing",
+        "Component Testing"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It is where you identify groups of inputs that have common characteristics and should be processed in the same way.",
+      "pts": 1,
+      "options": [
+        "Unit testing",
+        "System Testing",
+        "Partition Testing"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The level of confidence depends on how critical the software is to an organisation.",
+      "pts": 1,
+      "options": [
+        "User expectations",
+        "Software purpose",
+        "Marketing environment"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "____ is the most modern software is constructed by reusing existing components or systems.",
+      "pts": 1,
+      "options": [
+        "Management Development",
+        "Reuse",
+        "Configuration Management",
+        "Host-Target Development"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Structured object programming design processes not involve developing a number of different system models.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "_____ are used to show how objects respond to different service requests and the state transitions triggered by these requests.",
+      "pts": 1,
+      "options": [
+        "System Diagram",
+        "File Diagram",
+        "Subsystem Diagram",
+        "State Diagram"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "_________ is the name given to the general process of managing a changing software system.",
+      "pts": 1,
+      "options": [
+        "Host-Target Development",
+        "Management Development",
+        "Configuration Management",
+        "Reuse"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Every code segment that you write has at least one associated test so all code written has at least one test.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "They require a lot of effort for testing and maintenance of these models and, for small systems, this may not be cost- effective.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "_______ describe the dynamic interactions between objects.",
+      "pts": 1,
+      "options": [
+        "System Model",
+        "Dynamic Model",
+        "Design Model",
+        "Class Model"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Encapsulates the summarized data from the instruments.",
+      "pts": 1,
+      "options": [
+        "Application Data",
+        "Forecast Data",
+        "Weather Data",
+        "System Data"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Test software with sequences which have only a single value.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It is where a separate testing team test a complete version of the system before it is released to users.",
+      "pts": 1,
+      "options": [
+        "User Testing",
+        "Release Testing",
+        "Development testing"
+      ],
+      "answer": "A"
+    }
+  ],
+  "FA6-FA7": [
+    {
+      "type": "multiple_choice",
+      "question": "Defines the services that are provided by the component to other components.",
+      "pts": 1,
+      "options": [
+        "Provides interface",
+        "Requires interface",
+        "Emergent Property Prediction"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The component model specifies how the interfaces should be defined and the elements, such as operation names, parameters and exceptions, which should be included in the interface definition.",
+      "pts": 1,
+      "options": [
+        "Usage",
+        "Deployment",
+        "Interfaces"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The process of acquiring components for reuse or development into a reusable component.",
+      "pts": 1,
+      "options": [
+        "Component management",
+        "Component certification",
+        "Component acquisition"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Components developed for a specific application usually have to be generalised to make them reusable.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "This involves writing a wrapper component that implements provide and not requires interfaces then accesses the legacy system.",
+      "pts": 0,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Generic components may be less space- efficient and may have no longer execution times than their specific equivalents.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "When reusing components, it is essential to make trade-offs between ideal requirements and the services actually provided by available components.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "That provides support for component inter- operability.",
+      "pts": 1,
+      "options": [
+        "Independent components",
+        "Component standards",
+        "Middleware"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Composition involves integrating components with each other and with the component infrastructure.",
+      "pts": 0,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It is where an attacker generates information that should not exist and then uses this to gain some privileges.",
+      "pts": 1,
+      "options": [
+        "Modification",
+        "Fabrication",
+        "Interception"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Involves the sending computer sending information about what is required to another computer.",
+      "pts": 1,
+      "options": [
+        "Message-based interaction",
+        "Failure management",
+        "Procedural interaction"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Use of equipment and software from different vendors.",
+      "pts": 1,
+      "options": [
+        "Openness",
+        "Resource sharing",
+        "Concurrency"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "More processing is delegated to the client as the application processing is locally executed.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Users may pay for the software according to the amount of use they make of it or through an annual or monthly subscription.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Users may not pay for the software according to the amount of use they make of it or through an annual or monthly subscription.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Service-oriented architecture is an approach to structuring a software system as a set of separate, stateless services.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The ability to continue in operation after a fault has occurred.",
+      "pts": 1,
+      "options": [
+        "Resource sharing",
+        "Fault Tolerance",
+        "Openness"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A unit of composition with contractually specified interfaces and explicit context dependencies only.",
+      "pts": 1,
+      "options": [
+        "Councill and Heinmann",
+        "Szyperski",
+        "Emergent Property Prediction"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Defines the services that specifies what services must be made available for the component to execute as specified.",
+      "pts": 1,
+      "options": [
+        "Emergent Property Prediction",
+        "Provides interface",
+        "Requires interface"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "The operation of the component may depend on local exception handling, and changing this may have serious implications for the functionality of the component.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Generic components may be less space- efficient and may have longer execution times than their specific equivalents.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Different types of adaptor are required depending on the type of composition.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Different types of adaptor are not required depending on the type of composition.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The emergent properties of component compositions be predicted",
+      "pts": 1,
+      "options": [
+        "Emergent Property",
+        "Component Certification",
+        "Component trustworthiness"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Concurrent processing to enhance performance.",
+      "pts": 1,
+      "options": [
+        "Resource sharing",
+        "Openness",
+        "Concurrency"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "The overall system is not designed to take advantage of the computational power and storage of a large number of networked computers.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Software is deployed on a server (or more commonly a number of servers) and is accessed through a web browser.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "The server maintains the user’s data and state during an interaction session.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Branding, where users from each organization, are not presented with an interface that reflects their own organization.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Specifies how interfaces should be defined and the elements that should be included in an interface definition.",
+      "pts": 1,
+      "options": [
+        "service model",
+        "component model",
+        "distributed model"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It concern with managing a company’s reusable components, ensuring that they are properly catalogued, stored and made available for reuse.",
+      "pts": 1,
+      "options": [
+        "Component certification",
+        "Component management",
+        "Component acquisition"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Components developed for a specific application usually have to be generalised to make them usable.",
+      "pts": 0,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Components for use may be specially constructed by generalising existing components.",
+      "pts": 0,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "The development cost of reusable components may be higher than the cost of specific equivalents.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "The component specification may not be detailed enough to allow comprehensive tests to be developed.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Where data or services in the system are changed by an attacker.",
+      "pts": 1,
+      "options": [
+        "Interruption",
+        "Modification",
+        "Interception"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Software as a service is a way of providing functionality on a remote server with client access through a web browser.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "To what extent should the distributed system appear to the user as a single system?",
+      "pts": 1,
+      "options": [
+        "Openness",
+        "Scalability",
+        "Transparency"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In order for components to be distributed and accessed remotely, they need to have a unique name or handle associated with them.",
+      "pts": 1,
+      "options": [
+        "Deployment",
+        "Usage",
+        "Interface"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "The component specification maybe detailed enough to allow comprehensive tests to be developed.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "The major problem with component validation is that the component specification maybe sufficiently detailed to allow you to develop a complete set of component tests.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "The functionality that failed in this component was required in Ariane 5.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "The Object Constraint Language (OCL) has been designed to define constraints that are associated with UML models.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It is where system services are attacked and cannot be delivered as expected.",
+      "pts": 1,
+      "options": [
+        "Modification",
+        "Interruption",
+        "Interception"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "More complex than a fat client model especially for management.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "More processing is delegated to the client as the application processing is locally not executed.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Certification means that someone apart from the developer checks the quality of the component.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "The functionality that failed in this component was not required in Ariane 5.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "This is will certify the quality of components",
+      "pts": 1,
+      "options": [
+        "Component Certification",
+        "Component trustworthiness",
+        "Component standards"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It should be possible to manage a system as it increases in size, even if parts of the system are located in independent organizations.",
+      "pts": 1,
+      "options": [
+        "Size",
+        "Distribution",
+        "Manageability"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It is where some or all of the application processing is carried out on the client.",
+      "pts": 1,
+      "options": [
+        "Fat-client model",
+        "Failure management",
+        "Thin-client model"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "This avoids problems with scalability and performance if a fat-client two-tier model is chosen, or problems of system management if a fat-client model is used.",
+      "pts": 0,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Software is not deployed on a server (or more commonly a number of servers) and is accessed through a web browser.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "This is to facilitate component integration.",
+      "pts": 1,
+      "options": [
+        "Independent components",
+        "Middleware",
+        "Component standards"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "When using components, it is essential to make trade-offs between ideal requirements and the services actually provided by available components.",
+      "pts": 0,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It can a component with no available source code be trusted.",
+      "pts": 1,
+      "options": [
+        "Component Certification",
+        "Component standards",
+        "Component trustworthiness"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Increased throughput by adding new resources.",
+      "pts": 1,
+      "options": [
+        "Resource sharing",
+        "Openness",
+        "Scalability"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Service-oriented architecture is not an approach to structuring a software system as a set of separate, stateless services.",
+      "pts": 0,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It should be possible to add more resources to a system to cope with increasing numbers of users.",
+      "pts": 1,
+      "options": [
+        "Manageability",
+        "Distribution",
+        "Size"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Components for reuse may be specially constructed by generalising existing components.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Quality of Service?",
+      "pts": 1,
+      "options": [
+        "should include mechanisms for",
+        "it is inevitable that failures will occur,",
+        "offered by a distributed"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "There is no distinction in a distributed component architecture between clients and servers.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "The server no maintains the user’s data and state during an interaction session.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Access control, where service customers create individual accounts for their staff and define the resources and functions that are accessible to each of their users.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Component-based development?",
+      "pts": 1,
+      "options": [
+        "components developed using",
+        "provides a service without regard to",
+        ". is an approach to software"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "In 1996, the 1st test flight of the Ariane 5 rocket ended in disaster when the launcher went out of control 47 seconds after take off.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "More complex than a thin client model especially for management.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Can system failures be detected, contained and repaired",
+      "pts": 1,
+      "options": [
+        "Failure management",
+        "Scalability",
+        "Security"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Where communications between parts of the system are intercepted by an attacker so that there is a loss of confidentiality",
+      "pts": 1,
+      "options": [
+        "Modification",
+        "Interruption",
+        "Interception"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "A major advantage is that it places a heavy processing load on both the server and the network.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "There is distinction in a distributed component architecture between clients and servers.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The process of checking a component and certifying that it meets its specification.",
+      "pts": 1,
+      "options": [
+        "Component certification",
+        "Component management",
+        "Component acquisition"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Certification means that someone apart from the developer checks the inequality of the component.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "This is geared to reuse.",
+      "pts": 0,
+      "options": [
+        "Development Process",
+        "Component standards",
+        "Independent components"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "The Object Constraint Language (OCL) has been not designed to define constraints that are associated with UML models.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "This involves writing a wrapper component that implements provide and requires interfaces then accesses the legacy system.",
+      "pts": 0,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A message exchange standard that supports service communication",
+      "pts": 1,
+      "options": [
+        "WS-BPEL",
+        "WSDL (Web Service Definition",
+        "SOAP"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Your selection criteria will obviously include the functionality of the services offered. They may also include the cost of the services and the quality of service (responsiveness, availability, etc.) offered.",
+      "pts": 1,
+      "options": [
+        "Discover services",
+        "Select possible services",
+        "Formulate outline workflow"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Create workflow program during this stage, the abstract workflow design is not- transformed to an executable program and the service interface is defined.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Test completed service or application the process of testing the completed, composite service is more complex than component testing in situations where external services are used.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Graphical workflow notations, such as BPMN, are more readable and WS-BPEL cannot be generated from them.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Testing is intended to find defects and demonstrate that a system meets its functional and functional requirements.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "It may be easy to invoke compensating actions in external services as these may rely on the failure of other services which cannot be simulated.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which has a shorter term outlook, and focuses on planning the next increment of a system.",
+      "pts": 1,
+      "options": [
+        "Iteration Planning",
+        "Validation Planning",
+        "Release Planning"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It is where code is not modified an effort estimate (PM) is computed.",
+      "pts": 1,
+      "options": [
+        "White-box",
+        "Green-box",
+        "Black-box"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "PM = (ASLEC * AT/100)/ATPROD.",
+      "pts": 0,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "ATPROD is the productivity of engineers in integrating this code.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "ESLOC = ASLOC * (1-AT/100) * AAM.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "This depends on 5 scale factors (see next slide). Their sum/100 is added to 1.012.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Product attributes Concerned with required characteristics of the software product being developed.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Describes the quality procedures and standards that will be used in a project.",
+      "pts": 1,
+      "options": [
+        "Validation plan",
+        "Quality plan",
+        "Configuration management plan"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Personnel attributes Multipliers that take the experience and capabilities of the people not working on the project into account.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "The time required is independent of the number of people working on the project.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Web Services?",
+      "pts": 0,
+      "options": [
+        "Standard protocols have been",
+        "may execute on different computers",
+        "an instance of a more general notion"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Design the structure and organisation of the input and output messages. Notations such as the UML are a more abstract representation than XML",
+      "pts": 1,
+      "options": [
+        "Message design",
+        "Logical interface design",
+        "WSDL description"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "In inter-organisational systems, separate workflows are created for each organisation and linked through message exchange.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "WS-BPEL is an XML-standard for over workflow specification.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Dynamic binding means that the service used in an application may vary - the application tests are not, therefore, unreliable.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "If services have to be paid for as used, testing a service may be expensive.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "If services have to be paid for as used, testing a service may be not expensive.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Coordination Services that not support composite processes such as ordering.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Used when software is composed from existing parts.",
+      "pts": 1,
+      "options": [
+        "Application composition",
+        "Reuse model",
+        "Early design model"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Used to compute the effort of integrating reusable components.",
+      "pts": 1,
+      "options": [
+        "Application composition model",
+        "Reuse model",
+        "Early design model"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "This depends on 5 scale factors (see next slide). Their sum/100 is added to 1.01.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Computer attributes Constraints imposed on the software by the hardware platform.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Project attributes Concerned with the particular characteristics of the hardware development project.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Describes the approach, resources, and schedule used for system validation.",
+      "pts": 1,
+      "options": [
+        "Validation plan",
+        "Configuration management plan",
+        "Quality plan"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "This are normally used to illustrate the project schedule.",
+      "pts": 1,
+      "options": [
+        "bar chart",
+        "validation plan",
+        "graphical Notation"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It support composite processes such as ordering.",
+      "pts": 1,
+      "options": [
+        "Utility Services",
+        "Business Services",
+        "Coordination Services"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Starts with the service requirements and defines the operation names and parameters associated with the service.",
+      "pts": 1,
+      "options": [
+        "Message design",
+        "WSDL description",
+        "Logical interface design"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "External services may not have modified by the service provider thus invalidating tests which have been completed.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A standard for workflow languages used to define service composition",
+      "pts": 1,
+      "options": [
+        "SOAP",
+        "WS-BPEL",
+        "WSDL (Web Service Definition"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "The non-functional behavior of the service is predictable because it depends on load.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Project Planning?",
+      "pts": 1,
+      "options": [
+        "involves breaking down the",
+        "has to plan who will work on the",
+        "when you modify your plan in the"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It looks ahead for several months and decides on the features that should be included in a release of a system.",
+      "pts": 1,
+      "options": [
+        "Validation Planning",
+        "Release Planning",
+        "Iteration Planning"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It is where code is modified a size estimate equivalent to the number of lines of new source code is computed.",
+      "pts": 0,
+      "options": [
+        "Green-box",
+        "Black-box",
+        "White-box"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "EAM is the adaptation adjustment multiplier computed from the costs of changing the reused code.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "A company takes on a project in a new domain. The client has not defined the process to be used and has not allowed time for risk analysis. The company has a CMM level 2 rating.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Product attributes Concerned with required characteristics of the software product being not developed.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "The overall system is designed to take advantage of the computational power and storage of a large number of networked computers.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "This is associated with a specific business function e.g., in a university, student registration.",
+      "pts": 1,
+      "options": [
+        "Utility Services",
+        "Coordination Services",
+        "Business Services"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In this initial stage of service design, you use the requirements for the composite service as a basis for creating an ‘ideal’ service design.",
+      "pts": 1,
+      "options": [
+        "Select possible services",
+        "Formulate outline workflow",
+        "Discover services"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Test completed service or application the process of testing the completed, composite service is more complex than component testing in situations where internal services are used.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It is where you design the logical and WSDL service interfaces.",
+      "pts": 1,
+      "options": [
+        "Service implementation and",
+        "Service design",
+        "Service candidate identification"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "That implement general functionality used by different business processes.",
+      "pts": 1,
+      "options": [
+        "Utility Services",
+        "Business Services",
+        "Coordination Services"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "AT is the percentage of code automatically generated.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "AAM is the adaptation adjustment multiplier computed from the costs of changing the reused code.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Computer attributes Constraints imposed on the software by the software platform.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "PM is the effort computation and B is the exponent computed as discussed above (B is 1 for the early prototyping model).",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "During this stage of the process, you search service registries or catalogs to discover what services exist, who provides these services and the details of the service provision.",
+      "pts": 1,
+      "options": [
+        "Select possible services",
+        "Formulate outline workflow",
+        "Discover services"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Refine workflow this involves adding detail to the abstract description and perhaps adding or removing workflow activities.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Refine workflow this involves adding detail to the abstract description and perhaps not adding or removing workflow activities.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It is where you implement and test the service and make it available for use.",
+      "pts": 1,
+      "options": [
+        "Service candidate identification",
+        "Service implementation and",
+        "Service design"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "ASLOC is the not number of lines of generated code.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "There are work products that are delivered to the customer, e.g. a requirements document for the system.",
+      "pts": 1,
+      "options": [
+        "Deliverables",
+        "Milestones",
+        "Quality plan"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "WSDL description The logical specification is not converted to a WSDL description.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "WS-BPEL is an XML-standard for workflow specification.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Service testing is difficult as (external) services are ‘white-boxes’.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "It may be difficult to invoke compensating actions in external services as these may rely on the failure of other services which cannot be simulated.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Coordination Services that support composite processes such as ordering.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The most commonly used representation for project schedules.",
+      "pts": 1,
+      "options": [
+        "graphical Notation",
+        "bar chart",
+        "validation plan"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "A company takes on a project in a new domain. The client has not defined the process to be used and has not allowed time for risk analysis. The company has a CMM level 3 rating.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Project attributes Concerned with the particular characteristics of the software development project.",
+      "pts": 0,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "There are points in the schedule against which you can assess progress.",
+      "pts": 1,
+      "options": [
+        "Milestones",
+        "Deliverables",
+        "Quality plan"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "In inter-organisational systems, not separate workflows are created for each organisation and linked through message exchange.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "The non-functional behavior of the service is unpredictable because it depends on load.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "The time required is not independent of the number of people working on the project.",
+      "pts": 0,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The logical specification is converted to a WSDL description",
+      "pts": 1,
+      "options": [
+        "WSDL description",
+        "Message design",
+        "Logical interface design"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Testing is intended to find defects and demonstrate that a system meets its functional and non-functional requirements.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "External services may be modified by the service provider thus invalidating tests which have been completed.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Used once the system architecture has been designed and more information about the system is available.",
+      "pts": 1,
+      "options": [
+        "Post-architecture model",
+        "Early design model",
+        "Reuse model"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Estimates are made to discover the cost, to the developer, of producing a software system.",
+      "pts": 1,
+      "options": [
+        "project startup",
+        "Software Pricing",
+        "Project Planning"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "ESLOC = ASLOC * (1-AT/100) * AAP.",
+      "pts": 0,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Describes the configuration management procedures and structures to be used.",
+      "pts": 1,
+      "options": [
+        "Configuration management",
+        "Quality plan",
+        "Validation plan"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "The development cost of usable components may be higher than the cost of specific equivalents.",
+      "pts": 0,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "This avoids problems with scalability and performance if a thin-client two-tier model is chosen, or problems of system management if a fat-client model is used.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "The major problem with component validation is that the component specification may not be sufficiently detailed to allow you to develop a complete set of component tests.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "It is where the presentation layer is implemented on the client and all other layers (data management, application processing and database) are implemented on a server.",
+      "pts": 1,
+      "options": [
+        "Failure management",
+        "Thin-client model",
+        "Fat-client model"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Graphical workflow notations, such as BPMN, are more readable and WS-BPEL can be generated from them.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "PM = (ASLOC * AT/100)/ATPROD.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "ASLOC is the number of lines of generated code.",
+      "pts": 0,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "In 1996, the 1st test flight of the Ariane 5 rocket ended in disaster when the launcher went out of control 37 seconds after take off.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Access control, where service customers create individual accounts for their staff and define the resources and functions that are not accessible to each of their users.",
+      "pts": 0,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Personnel attributes Multipliers that take the experience and capabilities of the people working on the project into account.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "ET is the percentage of code automatically generated.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "ETPROD is the productivity of engineers in integrating this code.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In this approach, a formulaic approach is used to compute the project effort based on estimates of product attributes, such as size, and process characteristics, such as experience of staff involved.",
+      "pts": 1,
+      "options": [
+        "Story-based planning",
+        "Experience-based techniques",
+        "Algorithmic cost modeling"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Do not estimate of equivalent number of lines of new code computed using the reuse model.",
+      "pts": 1,
+      "answer": "False"
+    },
+    {
+      "type": "true_false",
+      "question": "Service testing is difficult as (external) services are ‘black-boxes’.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "true_false",
+      "question": "Branding, where users from each organization, are presented with an interface that reflects their own organization.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "This services may be entity- or task- oriented, coordination services are always task-oriented.",
+      "pts": 1,
+      "options": [
+        "Utility or business Services",
+        "Entity-oriented Services",
+        "Task-oriented Services"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Estimate of equivalent number of lines of new code computed using the reuse model.",
+      "pts": 1,
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Used when requirements are available but design has not yet started",
+      "pts": 1,
+      "options": [
+        "Application composition model",
+        "Reuse model",
+        "Early design model"
+      ],
+      "answer": "A"
+    }
+  ]
+}

@@ -19,8 +19,9 @@ let challengeState = {
 
 function initChallenge(subjectId) {
   const container = document.getElementById('challengeTab');
-  if (!container || !CSPT_DATA) return;
-  renderChallengeModuleList(container, CSPT_DATA.modules);
+  const data = getCurrentData();
+  if (!container || !data) return;
+  renderChallengeModuleList(container, data.modules);
 }
 
 function renderChallengeModuleList(container, modules) {
@@ -35,6 +36,7 @@ function renderChallengeModuleList(container, modules) {
           </div>
         </div>
       `).join('')}
+      ${currentSubjectId === 'cspt' ? `
       <div class="module-card tf-special-card" onclick="startTableFlagChallenge()">
         <div class="module-card-number" style="background:linear-gradient(135deg, var(--error), var(--warning))">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
@@ -44,6 +46,7 @@ function renderChallengeModuleList(container, modules) {
           <p>Mod 4–5 Combined • Trace instructions & determine flag values</p>
         </div>
       </div>
+      ` : ''}
     </div>
   `;
 }
@@ -55,13 +58,13 @@ function selectChallengeModule(moduleId) {
 
 function showChallengeSetup() {
   const container = document.getElementById('challengeTab');
-  const mod = CSPT_DATA.modules.find(m => m.id === challengeState.moduleId);
+  const mod = getCurrentData().modules.find(m => m.id === challengeState.moduleId);
   if (!mod) return;
   const maxQ = mod.questions.length;
 
   container.innerHTML = `
     <div class="challenge-setup">
-      <button class="reviewer-back" onclick="initChallenge('cspt')">
+      <button class="reviewer-back" onclick="initChallenge(currentSubjectId)">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
         Back to Modules
       </button>
@@ -157,7 +160,7 @@ function updateTimer(val) {
 }
 
 function startChallenge() {
-  const mod = CSPT_DATA.modules.find(m => m.id === challengeState.moduleId);
+  const mod = getCurrentData().modules.find(m => m.id === challengeState.moduleId);
   if (!mod) return;
 
   let pool = [...mod.questions];

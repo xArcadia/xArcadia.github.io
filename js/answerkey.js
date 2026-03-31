@@ -12,12 +12,13 @@ let akState = {
 
 function initAnswerKey(subjectId) {
   const container = document.getElementById('answerkeyTab');
-  if (!container || !CSPT_DATA) return;
-  renderModuleList(container, CSPT_DATA.modules, 'answerkey');
+  const data = getCurrentData();
+  if (!container || !data) return;
+  renderModuleList(container, data.modules, 'answerkey');
 
   // Override the click handler for answer key module cards
   container.querySelectorAll('.module-card').forEach((card, i) => {
-    card.onclick = () => selectAKModule(CSPT_DATA.modules[i].id);
+    card.onclick = () => selectAKModule(data.modules[i].id);
   });
 }
 
@@ -32,7 +33,7 @@ function selectAKModule(moduleId) {
 
 function renderAnswerKey() {
   const container = document.getElementById('answerkeyTab');
-  const mod = CSPT_DATA.modules.find(m => m.id === akState.moduleId);
+  const mod = getCurrentData().modules.find(m => m.id === akState.moduleId);
   if (!mod) return;
 
   let filtered = mod.questions;
@@ -48,7 +49,7 @@ function renderAnswerKey() {
 
   container.innerHTML = `
     <div class="answer-key-container">
-      <button class="reviewer-back" onclick="initAnswerKey('cspt')">
+      <button class="reviewer-back" onclick="initAnswerKey(currentSubjectId)">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
         Back to Modules
       </button>

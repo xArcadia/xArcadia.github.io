@@ -4,8 +4,9 @@
 
 function initReviewer(subjectId) {
   const container = document.getElementById('reviewerTab');
-  if (!container || !CSPT_DATA) return;
-  renderModuleList(container, CSPT_DATA.modules, 'reviewer');
+  const data = getCurrentData();
+  if (!container || !data) return;
+  renderModuleList(container, data.modules, 'reviewer');
 }
 
 function renderModuleList(container, modules, context) {
@@ -26,12 +27,13 @@ function renderModuleList(container, modules, context) {
 
 function showReviewerNotes(moduleId) {
   const container = document.getElementById('reviewerTab');
-  const mod = CSPT_DATA.modules.find(m => m.id === moduleId);
+  const data = getCurrentData();
+  const mod = data.modules.find(m => m.id === moduleId);
   if (!mod) return;
 
   container.innerHTML = `
     <div class="reviewer-content">
-      <button class="reviewer-back" onclick="initReviewer('cspt')">
+      <button class="reviewer-back" onclick="initReviewer(currentSubjectId)">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
         Back to Modules
       </button>
