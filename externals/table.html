@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>[M2-SUMMATIVE] Module 3 & 4 – All 10 Questions Completed</title>
+  <style>
+    :root { --purple: #7B1FA2; --light-purple: #E1BEE7; --blue: #1565C0; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f6f9;
+      color: #2d3b45;
+      padding: 24px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h1 { color: var(--purple); font-size: 22px; margin-bottom: 4px; }
+    h2 { color: var(--blue); font-size: 16px; margin-top: 32px; border-bottom: 2px solid var(--light-purple); padding-bottom: 6px; }
+    p.sub { font-size: 12px; color: #73818f; margin: 4px 0 10px 0; }
+    table {
+      width: 100%; border-collapse: collapse;
+      background: white; border-radius: 10px;
+      overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 8px; font-size: 12.5px;
+    }
+    thead tr { background: var(--purple); color: white; }
+    thead th { padding: 8px 10px; text-align: center; letter-spacing: 0.3px; }
+    thead th:first-child, thead th:nth-child(2), thead th:nth-child(3) { text-align: left; }
+    tbody tr { border-bottom: 1px solid #eee; }
+    tbody tr:nth-child(even) { background: #fafafa; }
+    tbody tr:hover { background: #f0e6ff; }
+    td { padding: 7px 10px; text-align: center; vertical-align: middle; }
+    td:first-child { text-align: center; font-weight: 600; color: #555; width: 32px; }
+    td:nth-child(2) { text-align: left; font-family: monospace; font-size: 12px; }
+    td:nth-child(3) { font-family: monospace; font-weight: 700; color: #1a237e; text-align: left; }
+    .f1 { color: #b71c1c; font-weight: bold; }
+    .f0 { color: #1b5e20; }
+    .fx { color: #795548; font-style: italic; }
+    .badge { background: #4CAF50; color: white; padding: 1px 6px; border-radius: 8px; font-size: 9px; font-weight: bold; margin-left: 4px; }
+    .prev { background: #FFA726; }
+    .sec { background: #E3F2FD; }
+    .sec td:nth-child(2) { color: #1565C0; }
+  </style>
+</head>
+<body>
+
+<h1>📋 [M2-SUMMATIVE] Module 3 &amp; 4 — All 10 Questions: Complete Answer Tables</h1>
+<p class="sub">Answers derived strictly from the option values listed in the quiz file. ✅ = Previously answered correctly (as marked in file).</p>
+
+<!-- ============================================================ -->
+<h2>Question 1 — MOV AX,0123 / BX,4567 / CX,89AB / DX,CDEF + Arithmetic</h2>
+<p class="sub">Series of instructions in sequence. All registers/flags initially 0.</p>
+<table>
+  <thead><tr><th>#</th><th>Instruction</th><th>Destination Operand</th><th>SF</th><th>ZF</th><th>AF</th><th>PF</th><th>CF</th><th>OF</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>MOV AX, 0123</td><td>AX = 0123H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>2</td><td>MOV BX, 4567</td><td>BX = 4567H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>3</td><td>MOV CX, 89AB</td><td>CX = 89ABH</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>4</td><td>MOV DX, CDEF</td><td>DX = CDEFH</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>5</td><td>ADD AX, BX</td><td>AX = 468AH</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>6</td><td>ADC AX, CX</td><td>AX = D035H</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>7</td><td>DAA</td><td>AX = D03BH</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr><td>8</td><td>INC AX</td><td>AX = D03CH</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>9</td><td>AAA</td><td>AX = D102H</td><td class="fx">X</td><td class="fx">X</td><td class="f1">1</td><td class="fx">X</td><td class="f1">1</td><td class="fx">X</td></tr>
+    <tr><td>10</td><td>SUB BX, CX</td><td>BX = BBBCH</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td></tr>
+    <tr><td>11</td><td>SBB AX, DX</td><td>AX = 0312H</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>12</td><td>DEC AX</td><td>AX = 0311H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>13</td><td>DAS</td><td>AX = 0311H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr><td>14</td><td>NEG AX</td><td>AX = FCEFH</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td></tr>
+    <tr><td>15</td><td>AAS</td><td>AX = FB09H</td><td class="fx">X</td><td class="fx">X</td><td class="f1">1</td><td class="fx">X</td><td class="f1">1</td><td class="fx">X</td></tr>
+  </tbody>
+</table>
+
+<!-- ============================================================ -->
+<h2>Question 2 — MOV AL,67 / BL,89 + Logic &amp; Shift/Rotate</h2>
+<p class="sub">Series of instructions in sequence. All registers/flags initially 0.</p>
+<table>
+  <thead><tr><th>#</th><th>Instruction</th><th>Destination Operand</th><th>SF</th><th>ZF</th><th>PF</th><th>CF</th><th>AF</th><th>OF</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>MOV AL, 67</td><td>AL = 67H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>2</td><td>MOV BL, 89</td><td>BL = 89H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>3</td><td>AND BL, AL</td><td>BL = 01H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>4</td><td>OR BL, AL</td><td>BL = 67H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>5</td><td>NOT BL</td><td>BL = 98H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>6</td><td>XOR BL, AL</td><td>BL = FFH</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>7</td><td>TEST AL, BL</td><td>AL = 67H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>8</td><td>SHL AL, 1</td><td>AL = CEH</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f1">1</td></tr>
+    <tr><td>9</td><td>SAR AL, 1</td><td>AL = E7H</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>10</td><td>ROL AL, 1</td><td>AL = CFH</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>11</td><td>RCL AL, 1</td><td>AL = 9FH</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>12</td><td>MOV CL, 5</td><td>CL = 05H</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>13</td><td>ROR AL, CL</td><td>AL = FCH</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="fx">X</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr><td>14</td><td>SHR AL, CL</td><td>AL = 07H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr><td>15</td><td>RCR AL, CL</td><td>AL = 78H</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="fx">X</td></tr>
+  </tbody>
+</table>
+
+<!-- ============================================================ -->
+<h2>Question 3 — MOV AL,7B / BL,05 + Logic/Shift/Rotate + STC/SAHF/CLC/LAHF/CMC</h2>
+<p class="sub">Series of instructions in sequence. All registers/flags initially 0.</p>
+<table>
+  <thead><tr><th>#</th><th>Instruction</th><th>Destination Operand</th><th>SF</th><th>ZF</th><th>PF</th><th>CF</th><th>AF</th><th>OF</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>MOV AL, 7B</td><td>AL = 7BH</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>2</td><td>MOV BL, 05</td><td>BL = 05H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>3</td><td>AND BL, AL</td><td>BL = 01H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>4</td><td>OR BL, AL</td><td>BL = 7BH</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>5</td><td>NOT BL</td><td>BL = 84H</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>6</td><td>XOR BL, AL</td><td>BL = FFH</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>7</td><td>TEST AL, BL</td><td>AL = 7BH</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>8</td><td>SHL AL, 1</td><td>AL = F6H</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="f1">1</td></tr>
+    <tr><td>9</td><td>SAR AL, 1</td><td>AL = FBH</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>10</td><td>ROL AL, 1</td><td>AL = F7H</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>11</td><td>RCL AL, 1</td><td>AL = EFH</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>12</td><td>MOV CL, 5</td><td>CL = 05H</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>13</td><td>ROR AL, CL</td><td>AL = 7FH</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr><td>14</td><td>SHR AL, CL</td><td>AL = 03H</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr><td>15</td><td>RCR AL, CL</td><td>AL = 38H</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>16</td><td>STC</td><td>AL = 38H <em>(CF→1)</em></td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>17</td><td>MOV AH, 25</td><td>AH = 25H</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>18</td><td>SAHF</td><td>AH = 25H <em>(flags←AH)</em></td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>19</td><td>CLC</td><td>AH = 25H <em>(CF→0)</em></td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>20</td><td>LAHF</td><td>AH = 06H <em>(AH←flags)</em></td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>21</td><td>CMC</td><td>AH = 06H <em>(CF→1)</em></td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td></tr>
+  </tbody>
+</table>
+
+<!-- ============================================================ -->
+<h2>Question 4 — MOV AL,AB / BL,CD + Logic/Shift/Rotate + STC/SAHF/CLC/LAHF/CMC</h2>
+<p class="sub">Series of instructions in sequence. All registers/flags initially 0.</p>
+<table>
+  <thead><tr><th>#</th><th>Instruction</th><th>Destination Operand</th><th>SF</th><th>ZF</th><th>PF</th><th>CF</th><th>AF</th><th>OF</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>MOV AL, AB</td><td>AL = ABH</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>2</td><td>MOV BL, CD</td><td>BL = CDH</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>3</td><td>AND BL, AL</td><td>BL = 89H</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>4</td><td>OR BL, AL</td><td>BL = ABH</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>5</td><td>NOT BL</td><td>BL = 54H</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>6</td><td>XOR BL, AL</td><td>BL = FFH</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>7</td><td>TEST AL, BL</td><td>AL = ABH</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>8</td><td>SHL AL, 1</td><td>AL = 56H</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="fx">X</td><td class="f1">1</td></tr>
+    <tr><td>9</td><td>SAR AL, 1</td><td>AL = 2BH</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>10</td><td>ROL AL, 1</td><td>AL = 56H</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>11</td><td>RCL AL, 1</td><td>AL = ACH</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="f1">1</td></tr>
+    <tr><td>12</td><td>MOV CL, 5</td><td>CL = 05H</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="f1">1</td></tr>
+    <tr><td>13</td><td>ROR AL, CL</td><td>AL = 65H</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="fx">X</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr><td>14</td><td>SHR AL, CL</td><td>AL = 03H</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr><td>15</td><td>RCR AL, CL</td><td>AL = 30H</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>16</td><td>STC</td><td>AL = 30H <em>(CF→1)</em></td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>17</td><td>MOV AH, EF</td><td>AH = EFH</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>18</td><td>SAHF</td><td>AH = EFH <em>(flags←AH)</em></td><td class="f1">1</td><td class="f1">1</td><td class="f1">1</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>19</td><td>CLC</td><td>AH = EFH <em>(CF→0)</em></td><td class="f1">1</td><td class="f1">1</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>20</td><td>LAHF</td><td>AH = C6H <em>(AH←flags)</em></td><td class="f1">1</td><td class="f1">1</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>21</td><td>CMC</td><td>AH = C6H <em>(CF→1)</em></td><td class="f1">1</td><td class="f1">1</td><td class="f1">1</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td></tr>
+  </tbody>
+</table>
+
+<!-- ============================================================ -->
+<h2>Question 5 — Program Trace (DS=8000H, SS=8001H, ALPHA=0020H)</h2>
+<p class="sub">All flags/registers initially 0. Memory at DS:0020H = 0050H, SS:0050H = 0010H, [BP] at SS:0040H = 1F31H.</p>
+<table>
+  <thead><tr><th>#</th><th>Instruction</th><th>Destination Operand</th><th>SF</th><th>ZF</th><th>PF</th><th>CF</th><th>AF</th><th>OF</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>MOV AX, ALPHA</td><td>AX = 0050H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>2</td><td>MOV SP, AX</td><td>SP = 0050H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>3</td><td>POP BX</td><td>BX = 0010H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>4</td><td>ADD BX, AX</td><td>BX = 0060H</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>5</td><td>SUB BX, 0020H</td><td>BX = 0040H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>6</td><td>XCHG BX, BP</td><td>BX = 0000H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>7</td><td>MOV CX, [BP]</td><td>CX = 1F31H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>8</td><td>SBB AX, CX</td><td>AX = E11FH</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="f0">0</td></tr>
+    <tr><td>9</td><td>ADC AX, 0029H</td><td>AX = E149H</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td></tr>
+    <tr><td>10</td><td>ADD AL, CL</td><td>AL = 7AH</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>11</td><td>DAA</td><td>AL = 80H</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="fx">X</td></tr>
+    <tr><td>12</td><td>NEG AX</td><td>AX = 1E80H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>13</td><td>LEA SI, ALPHA</td><td>SI = 0020H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>14</td><td>MOV DX, [SI]</td><td>DX = 0050H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>15</td><td>INC DX</td><td>DX = 0051H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td></tr>
+  </tbody>
+</table>
+
+<!-- ============================================================ -->
+<h2>Question 6 — MOV AL,CD / BL,EF + Logic &amp; Shift/Rotate <span class="badge">✅ Previously Answered</span></h2>
+<p class="sub">Series of instructions in sequence. All registers/flags initially 0.</p>
+<table>
+  <thead><tr><th>#</th><th>Instruction</th><th>Destination Operand</th><th>SF</th><th>ZF</th><th>PF</th><th>CF</th><th>AF</th><th>OF</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>MOV AL, CD</td><td>AL = CDH</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>2</td><td>MOV BL, EF</td><td>BL = EFH</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>3</td><td>AND BL, AL</td><td>BL = CDH</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>4</td><td>OR BL, AL</td><td>BL = CDH</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>5</td><td>NOT BL</td><td>BL = 32H</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>6</td><td>XOR BL, AL</td><td>BL = FFH</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>7</td><td>TEST AL, BL</td><td>AL = CDH</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>8</td><td>SHL AL, 1</td><td>AL = 9AH</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>9</td><td>SAR AL, 1</td><td>AL = CDH</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>10</td><td>ROL AL, 1</td><td>AL = 9BH</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>11</td><td>RCL AL, 1</td><td>AL = 37H</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="fx">X</td><td class="f1">1</td></tr>
+    <tr><td>12</td><td>MOV CL, 5</td><td>CL = 05H</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="fx">X</td><td class="f1">1</td></tr>
+    <tr><td>13</td><td>ROR AL, CL</td><td>AL = B9H</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr><td>14</td><td>SHR AL, CL</td><td>AL = 05H</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr><td>15</td><td>RCR AL, CL</td><td>AL = 58H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="fx">X</td></tr>
+  </tbody>
+</table>
+
+<!-- ============================================================ -->
+<h2>Question 7 — Program Trace (DS=8003H, SS=8001H, ALPHA=0030H) <span class="badge">✅ Previously Answered</span></h2>
+<p class="sub">All flags/registers initially 0. Memory at DS:ALPHA=0010H; SS:0010H=DF20H; [BP] at DS:0010H=0050H.</p>
+<table>
+  <thead><tr><th>#</th><th>Instruction</th><th>Destination Operand</th><th>SF</th><th>ZF</th><th>PF</th><th>CF</th><th>AF</th><th>OF</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>MOV AX, ALPHA</td><td>AX = 0010H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>2</td><td>MOV SP, AX</td><td>SP = 0010H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>3</td><td>POP BX</td><td>BX = DF20H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>4</td><td>ADD BX, AX</td><td>BX = DF30H</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>5</td><td>SUB BX, 0020H</td><td>BX = DF10H</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>6</td><td>XCHG AX, BP</td><td>AX = 0000H</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>7</td><td>MOV CX, [BP]</td><td>CX = 0050H</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>8</td><td>SBB AX, CX</td><td>AX = DEE9H</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>9</td><td>ADC AX, 0029H</td><td>AX = 2167H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="f0">0</td></tr>
+    <tr><td>10</td><td>ADD AL, CL</td><td>AL = 39H</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>11</td><td>DAA</td><td>AL = 99H</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr><td>12</td><td>NEG AX</td><td>AX = DEC0H</td><td class="f1">1</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td></tr>
+    <tr><td>13</td><td>LEA SI, ALPHA</td><td>SI = 0030H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="f0">0</td></tr>
+    <tr><td>14</td><td>MOV DX, [SI]</td><td>DX = 0010H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>15</td><td>INC DX</td><td>DX = 0011H</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td></tr>
+  </tbody>
+</table>
+
+<!-- ============================================================ -->
+<h2>Question 8 — MOV AL,01 / BL,23 + Logic/Shift/Rotate + STC/SAHF/CLC/LAHF/CMC</h2>
+<p class="sub">Series of instructions in sequence. All registers/flags initially 0.</p>
+<table>
+  <thead><tr><th>#</th><th>Instruction</th><th>Destination Operand</th><th>SF</th><th>ZF</th><th>PF</th><th>CF</th><th>AF</th><th>OF</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>MOV AL, 01</td><td>AL = 01H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>2</td><td>MOV BL, 23</td><td>BL = 23H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>3</td><td>AND BL, AL</td><td>BL = 01H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>4</td><td>OR BL, AL</td><td>BL = 01H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>5</td><td>NOT BL</td><td>BL = FEH</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>6</td><td>XOR BL, AL</td><td>BL = FFH</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>7</td><td>TEST AL, BL</td><td>AL = 01H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>8</td><td>SHL AL, 1</td><td>AL = 02H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>9</td><td>SAR AL, 1</td><td>AL = 01H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>10</td><td>ROL AL, 1</td><td>AL = 02H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>11</td><td>RCL AL, 1</td><td>AL = 04H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>12</td><td>MOV CL, 5</td><td>CL = 05H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>13</td><td>ROR AL, CL</td><td>AL = 20H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr><td>14</td><td>SHR AL, CL</td><td>AL = 01H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr><td>15</td><td>RCR AL, CL</td><td>AL = 10H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>16</td><td>STC</td><td>AL = 10H <em>(CF→1)</em></td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>17</td><td>MOV AH, 45</td><td>AH = 45H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>18</td><td>SAHF</td><td>AH = 45H <em>(flags←AH)</em></td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>19</td><td>CLC</td><td>AH = 45H <em>(CF→0)</em></td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>20</td><td>LAHF</td><td>AH = 46H <em>(AH←flags)</em></td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>21</td><td>CMC</td><td>AH = 46H <em>(CF→1)</em></td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td></tr>
+  </tbody>
+</table>
+
+<!-- ============================================================ -->
+<h2>Question 9 — MOV AL,CD / BL,EF + Logic/Shift/Rotate + STC/SAHF/CLC/LAHF/CMC</h2>
+<p class="sub">Series of instructions in sequence. All registers/flags initially 0. (Same initial values as Q6 + extra flag instructions)</p>
+<table>
+  <thead><tr><th>#</th><th>Instruction</th><th>Destination Operand</th><th>SF</th><th>ZF</th><th>PF</th><th>CF</th><th>AF</th><th>OF</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>MOV AL, CD</td><td>AL = CDH</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>2</td><td>MOV BL, EF</td><td>BL = EFH</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>3</td><td>AND BL, AL</td><td>BL = CDH</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>4</td><td>OR BL, AL</td><td>BL = CDH</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>5</td><td>NOT BL</td><td>BL = 32H</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>6</td><td>XOR BL, AL</td><td>BL = FFH</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>7</td><td>TEST AL, BL</td><td>AL = CDH</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>8</td><td>SHL AL, 1</td><td>AL = 9AH</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>9</td><td>SAR AL, 1</td><td>AL = CDH</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>10</td><td>ROL AL, 1</td><td>AL = 9BH</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>11</td><td>RCL AL, 1</td><td>AL = 37H</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="fx">X</td><td class="f1">1</td></tr>
+    <tr><td>12</td><td>MOV CL, 5</td><td>CL = 05H</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="fx">X</td><td class="f1">1</td></tr>
+    <tr><td>13</td><td>ROR AL, CL</td><td>AL = B9H</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr><td>14</td><td>SHR AL, CL</td><td>AL = 05H</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr><td>15</td><td>RCR AL, CL</td><td>AL = 58H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>16</td><td>STC</td><td>AL = 58H <em>(CF→1)</em></td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>17</td><td>MOV AH, 01</td><td>AH = 01H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>18</td><td>SAHF</td><td>AH = 01H <em>(flags←AH)</em></td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>19</td><td>CLC</td><td>AH = 01H <em>(CF→0)</em></td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>20</td><td>LAHF</td><td>AH = 02H <em>(AH←flags)</em></td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>21</td><td>CMC</td><td>AH = 02H <em>(CF→1)</em></td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td></tr>
+  </tbody>
+</table>
+
+<!-- ============================================================ -->
+<h2>Question 10 — MOV AL,67 / BL,89 + Logic/Shift/Rotate + STC/SAHF/CLC/LAHF/CMC</h2>
+<p class="sub">Series of instructions in sequence. All registers/flags initially 0. (Same initial values as Q2 + extra flag instructions)</p>
+<table>
+  <thead><tr><th>#</th><th>Instruction</th><th>Destination Operand</th><th>SF</th><th>ZF</th><th>PF</th><th>CF</th><th>AF</th><th>OF</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>MOV AL, 67</td><td>AL = 67H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>2</td><td>MOV BL, 89</td><td>BL = 89H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td></tr>
+    <tr><td>3</td><td>AND BL, AL</td><td>BL = 01H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>4</td><td>OR BL, AL</td><td>BL = 67H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>5</td><td>NOT BL</td><td>BL = 98H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>6</td><td>XOR BL, AL</td><td>BL = FFH</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>7</td><td>TEST AL, BL</td><td>AL = 67H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>8</td><td>SHL AL, 1</td><td>AL = CEH</td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td><td class="f1">1</td></tr>
+    <tr><td>9</td><td>SAR AL, 1</td><td>AL = E7H</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>10</td><td>ROL AL, 1</td><td>AL = CFH</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>11</td><td>RCL AL, 1</td><td>AL = 9FH</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>12</td><td>MOV CL, 5</td><td>CL = 05H</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="fx">X</td><td class="f0">0</td></tr>
+    <tr><td>13</td><td>ROR AL, CL</td><td>AL = FCH</td><td class="f1">1</td><td class="f0">0</td><td class="f1">1</td><td class="fx">X</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr><td>14</td><td>SHR AL, CL</td><td>AL = 07H</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr><td>15</td><td>RCR AL, CL</td><td>AL = 78H</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>16</td><td>STC</td><td>AL = 78H <em>(CF→1)</em></td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="fx">X</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>17</td><td>MOV AH, AB</td><td>AH = ABH</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>18</td><td>SAHF</td><td>AH = ABH <em>(flags←AH)</em></td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>19</td><td>CLC</td><td>AH = ABH <em>(CF→0)</em></td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>20</td><td>LAHF</td><td>AH = 82H <em>(AH←flags)</em></td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="f0">0</td><td class="fx">X</td></tr>
+    <tr class="sec"><td>21</td><td>CMC</td><td>AH = 82H <em>(CF→1)</em></td><td class="f1">1</td><td class="f0">0</td><td class="f0">0</td><td class="f1">1</td><td class="f0">0</td><td class="fx">X</td></tr>
+  </tbody>
+</table>
+
+<p style="margin-top:24px; font-size:12px; color:#888;">
+  <strong>Legend:</strong>
+  <span style="color:#b71c1c; font-weight:bold;">1 = flag set</span> &nbsp;|&nbsp;
+  <span style="color:#1b5e20;">0 = flag cleared</span> &nbsp;|&nbsp;
+  <span style="color:#795548; font-style:italic;">X = undefined/don't care</span> &nbsp;|&nbsp;
+  <span style="background:#E3F2FD; padding:1px 5px;">Blue rows = STC/SAHF/CLC/LAHF/CMC section</span>
+</p>
+</body>
+</html>
