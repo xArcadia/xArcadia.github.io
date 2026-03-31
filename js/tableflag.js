@@ -223,7 +223,7 @@ function renderTableRow(q, step, si, submitted) {
         const currentVal = userVal !== undefined ? userVal : '';
         return `<td class="flag-cell">
           <button class="flag-toggle ${currentVal === 0 ? 'val-0' : currentVal === 1 ? 'val-1' : ''}"
-                  onclick="toggleFlag(${si},'${key}')">
+                  onclick="toggleFlag(${si},'${key}',this)">
             ${currentVal !== '' ? currentVal : '·'}
           </button>
         </td>`;
@@ -232,20 +232,24 @@ function renderTableRow(q, step, si, submitted) {
   `;
 }
 
-function toggleFlag(stepIndex, flagKey) {
+function toggleFlag(stepIndex, flagKey, btn) {
   if (!tableFlagState.userAnswers[stepIndex]) {
     tableFlagState.userAnswers[stepIndex] = {};
   }
   const current = tableFlagState.userAnswers[stepIndex][flagKey];
-  // Cycle: empty → 0 → 1 → 0 → 1 ...
+  let next;
   if (current === undefined || current === '') {
-    tableFlagState.userAnswers[stepIndex][flagKey] = 0;
+    next = 0;
   } else if (current === 0) {
-    tableFlagState.userAnswers[stepIndex][flagKey] = 1;
+    next = 1;
   } else {
-    tableFlagState.userAnswers[stepIndex][flagKey] = 0;
+    next = 0;
   }
-  renderTableFlag();
+  tableFlagState.userAnswers[stepIndex][flagKey] = next;
+
+  // Update only this button — no full re-render
+  btn.className = 'flag-toggle ' + (next === 0 ? 'val-0' : 'val-1');
+  btn.textContent = next;
 }
 
 function submitTableFlag() {
