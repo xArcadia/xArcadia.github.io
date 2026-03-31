@@ -20,7 +20,32 @@ let challengeState = {
 function initChallenge(subjectId) {
   const container = document.getElementById('challengeTab');
   if (!container || !CSPT_DATA) return;
-  renderModuleList(container, CSPT_DATA.modules, 'challenge');
+  renderChallengeModuleList(container, CSPT_DATA.modules);
+}
+
+function renderChallengeModuleList(container, modules) {
+  container.innerHTML = `
+    <div class="module-grid">
+      ${modules.map(m => `
+        <div class="module-card" onclick="selectChallengeModule(${m.id})">
+          <div class="module-card-number">${m.id}</div>
+          <div class="module-card-info">
+            <h4>${m.title}</h4>
+            <p>${m.subtopics.join(' • ')}</p>
+          </div>
+        </div>
+      `).join('')}
+      <div class="module-card tf-special-card" onclick="startTableFlagChallenge()">
+        <div class="module-card-number" style="background:linear-gradient(135deg, var(--error), var(--warning))">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+        </div>
+        <div class="module-card-info">
+          <h4>Table Flag Challenge</h4>
+          <p>Mod 4–5 Combined • Trace instructions & determine flag values</p>
+        </div>
+      </div>
+    </div>
+  `;
 }
 
 function selectChallengeModule(moduleId) {
