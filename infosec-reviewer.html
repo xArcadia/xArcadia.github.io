@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Information Security Reviewer</title>
+  <meta name="description" content="Interactive Information Security quiz reviewer with 257 questions">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/infosec-reviewer.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="app-header">
+    <div class="header-left">
+      <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <h1>InfoSec Reviewer</h1>
+    </div>
+    <div class="header-right">
+      <div id="progress-badge" class="progress-badge">0 / 257</div>
+      <button id="shuffle-btn" class="icon-btn" title="Shuffle Questions" onclick="toggleShuffle()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
+      </button>
+      <button id="jumpto-btn" class="icon-btn" title="Jump to Question" onclick="openJumpModal()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Quiz Area -->
+  <main id="quiz-container">
+    <div id="question-card" class="question-card">
+      <div class="question-meta">
+        <span id="q-number" class="q-number">Question 1</span>
+        <span id="q-score" class="q-score"></span>
+      </div>
+      <p id="q-text" class="q-text"></p>
+      <div id="options-container" class="options-container"></div>
+    </div>
+  </main>
+
+  <!-- Navigation -->
+  <nav id="quiz-nav">
+    <button id="prev-btn" class="nav-btn" onclick="prevQuestion()" disabled>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+      <span>Previous</span>
+    </button>
+    <div id="nav-dots" class="nav-dots"></div>
+    <button id="next-btn" class="nav-btn" onclick="nextQuestion()">
+      <span>Next</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+  </nav>
+
+  <!-- Jump Modal -->
+  <div id="jump-modal" class="modal-overlay" onclick="closeJumpModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h2>Jump to Question</h2>
+        <button class="modal-close" onclick="closeJumpModal()">&times;</button>
+      </div>
+      <input id="jump-search" type="number" min="1" max="257" placeholder="Enter question number (1-257)" oninput="filterJump()">
+      <div id="jump-grid" class="jump-grid"></div>
+    </div>
+  </div>
+
+  <!-- Results Bar (sticky bottom summary) -->
+  <div id="results-bar" class="results-bar hidden">
+    <div class="results-inner">
+      <span id="results-correct" class="results-stat correct">0 Correct</span>
+      <span id="results-wrong" class="results-stat wrong">0 Wrong</span>
+      <span id="results-remaining" class="results-stat remaining">257 Remaining</span>
+    </div>
+  </div>
+
+  <script src="infosec_questions.js"></script>
+  <script src="js/infosec-reviewer.js"></script>
+</body>
+</html>
