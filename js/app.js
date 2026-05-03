@@ -21,6 +21,14 @@ const SUBJECTS = [
     icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>`
   },
   {
+    id: 'sysad',
+    title: 'System Administration',
+    description: 'IT infrastructure, servers, cloud computing, virtualization, network services, SysAdmin roles, troubleshooting, and organizational policies.',
+    modules: 1,
+    dataFile: 'sysad',
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>`
+  },
+  {
     id: 'infosec',
     title: 'Information Security',
     description: 'CIA triad, encryption, authentication, social engineering, malware, network attacks, security policies, and change management.',
@@ -35,6 +43,7 @@ const SUBJECTS = [
 function getSubjectData(subjectId) {
   if (subjectId === 'cspt' && typeof CSPT_DATA !== 'undefined') return CSPT_DATA;
   if (subjectId === 'sysinteg' && typeof SYSINTEG_DATA !== 'undefined') return SYSINTEG_DATA;
+  if (subjectId === 'sysad' && typeof SYSAD_DATA !== 'undefined') return SYSAD_DATA;
   return null;
 }
 
