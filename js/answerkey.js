@@ -95,9 +95,17 @@ function renderAllView(container, questions) {
   container.innerHTML = `
     <div class="qa-list">
       ${questions.map((q, i) => {
-        const ansText = q.type === 'multiple_choice'
-          ? `${q.answer}. ${q.options['ABCD'.indexOf(q.answer)]}`
-          : q.answer;
+        const letters = ['A','B','C','D','E','F'];
+        let ansText;
+        if (q.type === 'multiple_choice') {
+          if (q.multiSelect) {
+            ansText = q.answer.split(',').map(l => `${l}. ${q.options[letters.indexOf(l)] || '?'}`).join(', ');
+          } else {
+            ansText = `${q.answer}. ${q.options[letters.indexOf(q.answer)] || '?'}`;
+          }
+        } else {
+          ansText = q.answer;
+        }
         return `
           <div class="qa-item">
             <div class="qa-item-q">
@@ -122,9 +130,17 @@ function renderOneView(container, questions) {
   }
   const idx = Math.min(akState.currentFlipIndex, questions.length - 1);
   const q = questions[idx];
-  const ansText = q.type === 'multiple_choice'
-    ? `${q.answer}. ${q.options['ABCD'.indexOf(q.answer)]}`
-    : q.answer;
+  const letters = ['A','B','C','D','E','F'];
+  let ansText;
+  if (q.type === 'multiple_choice') {
+    if (q.multiSelect) {
+      ansText = q.answer.split(',').map(l => `${l}. ${q.options[letters.indexOf(l)] || '?'}`).join(', ');
+    } else {
+      ansText = `${q.answer}. ${q.options[letters.indexOf(q.answer)] || '?'}`;
+    }
+  } else {
+    ansText = q.answer;
+  }
 
   container.innerHTML = `
     <div style="text-align:center;margin-bottom:16px;color:var(--text-muted);font-size:0.9rem">
@@ -136,8 +152,9 @@ function renderOneView(container, questions) {
       ${q.type === 'multiple_choice' ? `
         <div class="options-list">
           ${q.options.map((opt, i) => {
-            const letter = 'ABCD'[i];
-            return `<div class="option-btn ${letter === q.answer ? 'correct' : ''}" style="cursor:default">
+            const letter = 'ABCDEF'[i];
+            const correctAnswers = q.multiSelect ? q.answer.split(',') : [q.answer];
+            return `<div class="option-btn ${correctAnswers.includes(letter) ? 'correct' : ''}" style="cursor:default">
               <span class="option-letter">${letter}</span><span>${opt}</span>
             </div>`;
           }).join('')}
@@ -172,9 +189,17 @@ function renderFlipView(container, questions) {
   }
   const idx = Math.min(akState.currentFlipIndex, questions.length - 1);
   const q = questions[idx];
-  const ansText = q.type === 'multiple_choice'
-    ? `${q.answer}. ${q.options['ABCD'.indexOf(q.answer)]}`
-    : q.answer;
+  const letters = ['A','B','C','D','E','F'];
+  let ansText;
+  if (q.type === 'multiple_choice') {
+    if (q.multiSelect) {
+      ansText = q.answer.split(',').map(l => `${l}. ${q.options[letters.indexOf(l)] || '?'}`).join(', ');
+    } else {
+      ansText = `${q.answer}. ${q.options[letters.indexOf(q.answer)] || '?'}`;
+    }
+  } else {
+    ansText = q.answer;
+  }
 
   container.innerHTML = `
     <div class="flip-card-container">

@@ -304,20 +304,23 @@ function renderQuiz() {
 }
 
 function renderMCOptions(q, userAnswer, revealed) {
-  const letters = ['A', 'B', 'C', 'D'];
+  const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+  const isMulti = q.multiSelect;
+  const correctAnswers = isMulti ? q.answer.split(',') : [q.answer];
+  const userAnswers = isMulti && userAnswer ? userAnswer.split(',') : (userAnswer ? [userAnswer] : []);
   return `
     <div class="options-list">
       ${q.options.map((opt, i) => {
         const letter = letters[i];
         let cls = '';
         if (revealed) {
-          if (letter === q.answer) cls = 'correct';
-          else if (letter === userAnswer) cls = 'wrong';
-        } else if (letter === userAnswer) {
+          if (correctAnswers.includes(letter)) cls = 'correct';
+          else if (userAnswers.includes(letter)) cls = 'wrong';
+        } else if (userAnswers.includes(letter)) {
           cls = 'selected';
         }
         return `
-          <button class="option-btn ${cls}" onclick="selectAnswer('${q.id}', '${letter}')" ${revealed ? 'disabled' : ''}>
+          <button class="option-btn ${cls}" onclick="${isMulti ? `toggleMultiAnswer('${q.id}', '${letter}')` : `selectAnswer('${q.id}', '${letter}')`}" ${revealed && !isMulti ? 'disabled' : ''}>
             <span class="option-letter">${letter}</span>
             <span>${opt}</span>
           </button>
@@ -346,6 +349,19 @@ function renderTFOptions(q, userAnswer, revealed) {
 
 function renderIDInput(q, userAnswer) {
   return `<input class="identification-input" type="text" placeholder="Type your answer..." value="${userAnswer || ''}" oninput="selectAnswer('${q.id}', this.value)">`;
+}
+
+function toggleMultiAnswer(qId, letter) {
+  let current = challengeState.answers[qId] ? challengeState.answers[qId].split(',') : [];
+  const idx = current.indexOf(letter);
+  if (idx >= 0) {
+    current.splice(idx, 1);
+  } else {
+    current.push(letter);
+    current.sort();
+  }
+  challengeState.answers[qId] = current.join(',');
+  renderQuiz();
 }
 
 function selectAnswer(qId, answer) {
@@ -402,9 +418,14 @@ function submitQuiz() {
 
   challengeState.questions.forEach(q => {
     const userAns = challengeState.answers[q.id];
-    if (userAns !== undefined) {
+    if (userAns !== undefined && userAns !== '') {
       if (q.type === 'identification') {
         if (userAns.trim().toLowerCase() === q.answer.toLowerCase()) correct++;
+        else wrong++;
+      } else if (q.multiSelect) {
+        const userSet = userAns.split(',').sort().join(',');
+        const ansSet = q.answer.split(',').sort().join(',');
+        if (userSet === ansSet) correct++;
         else wrong++;
       } else {
         if (userAns === q.answer) correct++;
@@ -457,19 +478,31 @@ function submitQuiz() {
       <div class="results-review">
         <h3>Review Answers</h3>
         ${challengeState.questions.map((q, i) => {
+          const letters = ['A','B','C','D','E','F'];
           const userAns = challengeState.answers[q.id];
           let isCorrect = false;
           if (q.type === 'identification') {
             isCorrect = userAns && userAns.trim().toLowerCase() === q.answer.toLowerCase();
+          } else if (q.multiSelect) {
+            const userSet = userAns ? userAns.split(',').sort().join(',') : '';
+            const ansSet = q.answer.split(',').sort().join(',');
+            isCorrect = userSet === ansSet;
           } else {
             isCorrect = userAns === q.answer;
           }
-          const ansDisplay = q.type === 'multiple_choice'
-            ? (userAns ? `${userAns}. ${q.options['ABCD'.indexOf(userAns)]}` : 'No answer')
-            : (userAns || 'No answer');
-          const correctDisplay = q.type === 'multiple_choice'
-            ? `${q.answer}. ${q.options['ABCD'.indexOf(q.answer)]}`
-            : q.answer;
+          let ansDisplay, correctDisplay;
+          if (q.type === 'multiple_choice') {
+            if (q.multiSelect) {
+              ansDisplay = userAns ? userAns.split(',').map(l => `${l}. ${q.options[letters.indexOf(l)] || '?'}`).join(', ') : 'No answer';
+              correctDisplay = q.answer.split(',').map(l => `${l}. ${q.options[letters.indexOf(l)] || '?'}`).join(', ');
+            } else {
+              ansDisplay = userAns ? `${userAns}. ${q.options[letters.indexOf(userAns)] || '?'}` : 'No answer';
+              correctDisplay = `${q.answer}. ${q.options[letters.indexOf(q.answer)] || '?'}`;
+            }
+          } else {
+            ansDisplay = userAns || 'No answer';
+            correctDisplay = q.answer;
+          }
 
           return `
             <div class="review-item ${isCorrect ? 'correct-review' : 'wrong-review'}">
