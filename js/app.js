@@ -32,9 +32,8 @@ const SUBJECTS = [
     id: 'infosec',
     title: 'Information Security',
     description: 'CIA triad, encryption, authentication, social engineering, malware, network attacks, security policies, and change management.',
-    modules: 297,
-    modulesLabel: 'Questions',
-    link: 'infosec-reviewer.html',
+    modules: 2,
+    dataFile: 'infosec',
     icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`
   }
 ];
@@ -44,6 +43,7 @@ function getSubjectData(subjectId) {
   if (subjectId === 'cspt' && typeof CSPT_DATA !== 'undefined') return CSPT_DATA;
   if (subjectId === 'sysinteg' && typeof SYSINTEG_DATA !== 'undefined') return SYSINTEG_DATA;
   if (subjectId === 'sysad' && typeof SYSAD_DATA !== 'undefined') return SYSAD_DATA;
+  if (subjectId === 'infosec' && typeof INFOSEC_DATA !== 'undefined') return INFOSEC_DATA;
   return null;
 }
 
