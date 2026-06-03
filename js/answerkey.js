@@ -10,6 +10,13 @@ let akState = {
   flipped: false
 };
 
+let akSearchTimer = null;
+function akSearchDebounce(value) {
+  akState.searchQuery = value;
+  clearTimeout(akSearchTimer);
+  akSearchTimer = setTimeout(() => updateAKContent(), 250);
+}
+
 function initAnswerKey(subjectId) {
   const container = document.getElementById('answerkeyTab');
   const data = getCurrentData();
@@ -36,6 +43,41 @@ function renderAnswerKey() {
   const mod = getCurrentData().modules.find(m => m.id === akState.moduleId);
   if (!mod) return;
 
+  container.innerHTML = `
+    <div class="answer-key-container">
+      <button class="reviewer-back" onclick="initAnswerKey(currentSubjectId)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+        Back to Modules
+      </button>
+      <div class="section-header" style="margin-bottom:24px">
+        <h1>Module ${mod.id}: ${mod.title}</h1>
+        <p id="akQuestionCount">${mod.questions.length} questions</p>
+      </div>
+
+      <div class="answer-key-controls">
+        <div class="view-mode-toggle">
+          <button class="view-mode-btn ${akState.viewMode === 'all' ? 'active' : ''}" onclick="switchAKView('all')">Show All</button>
+          <button class="view-mode-btn ${akState.viewMode === 'one' ? 'active' : ''}" onclick="switchAKView('one')">One by One</button>
+          <button class="view-mode-btn ${akState.viewMode === 'flip' ? 'active' : ''}" onclick="switchAKView('flip')">Card Flip</button>
+        </div>
+        <div class="search-bar">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          <input type="text" id="akSearchInput" placeholder="Search questions..." value="${akState.searchQuery}" oninput="akSearchDebounce(this.value)">
+        </div>
+      </div>
+
+      <div id="akContent"></div>
+    </div>
+  `;
+
+  updateAKContent();
+}
+
+function updateAKContent() {
+  const content = document.getElementById('akContent');
+  const mod = getCurrentData().modules.find(m => m.id === akState.moduleId);
+  if (!content || !mod) return;
+
   let filtered = mod.questions;
   if (akState.searchQuery) {
     const q = akState.searchQuery.toLowerCase();
@@ -47,34 +89,9 @@ function renderAnswerKey() {
     );
   }
 
-  container.innerHTML = `
-    <div class="answer-key-container">
-      <button class="reviewer-back" onclick="initAnswerKey(currentSubjectId)">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
-        Back to Modules
-      </button>
-      <div class="section-header" style="margin-bottom:24px">
-        <h1>Module ${mod.id}: ${mod.title}</h1>
-        <p>${filtered.length} questions</p>
-      </div>
+  const countEl = document.getElementById('akQuestionCount');
+  if (countEl) countEl.textContent = filtered.length + ' questions';
 
-      <div class="answer-key-controls">
-        <div class="view-mode-toggle">
-          <button class="view-mode-btn ${akState.viewMode === 'all' ? 'active' : ''}" onclick="switchAKView('all')">Show All</button>
-          <button class="view-mode-btn ${akState.viewMode === 'one' ? 'active' : ''}" onclick="switchAKView('one')">One by One</button>
-          <button class="view-mode-btn ${akState.viewMode === 'flip' ? 'active' : ''}" onclick="switchAKView('flip')">Card Flip</button>
-        </div>
-        <div class="search-bar">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-          <input type="text" placeholder="Search questions..." value="${akState.searchQuery}" oninput="akState.searchQuery=this.value; renderAnswerKey()">
-        </div>
-      </div>
-
-      <div id="akContent"></div>
-    </div>
-  `;
-
-  const content = document.getElementById('akContent');
   if (akState.viewMode === 'all') renderAllView(content, filtered);
   else if (akState.viewMode === 'one') renderOneView(content, filtered);
   else renderFlipView(content, filtered);

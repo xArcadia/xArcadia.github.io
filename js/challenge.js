@@ -249,15 +249,33 @@ function renderQuiz() {
         ` : ''}
       </div>
 
-      <!-- Question Dots -->
-      <div class="question-dots" style="margin-bottom:20px">
-        ${challengeState.questions.map((qq, i) => {
-          let cls = '';
-          if (i === idx) cls = 'current';
-          else if (challengeState.answers[qq.id] !== undefined) cls = 'answered';
-          const clickable = isHell ? (i <= idx ? `onclick="goToQuestion(${i})"` : '') : `onclick="goToQuestion(${i})"`;
-          return `<div class="q-dot ${cls}" ${clickable}>${i + 1}</div>`;
-        }).join('')}
+      <!-- Question Nav Toggle -->
+      <div class="q-nav-toggle-wrap" style="margin-bottom:20px;text-align:center">
+        <button class="q-nav-toggle-btn" onclick="toggleQuestionNav()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          Question ${idx + 1} of ${total} — Jump to...
+        </button>
+      </div>
+
+      <!-- Question Nav Overlay -->
+      <div class="q-nav-overlay" id="qNavOverlay" onclick="if(event.target===this)toggleQuestionNav()">
+        <div class="q-nav-popup">
+          <div class="q-nav-popup-header">
+            <h3>Jump to Question</h3>
+            <button class="q-nav-close" onclick="toggleQuestionNav()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+          </div>
+          <div class="question-dots">
+            ${challengeState.questions.map((qq, i) => {
+              let cls = '';
+              if (i === idx) cls = 'current';
+              else if (challengeState.answers[qq.id] !== undefined) cls = 'answered';
+              const clickable = isHell ? (i <= idx ? `onclick="goToQuestion(${i});toggleQuestionNav()"` : '') : `onclick="goToQuestion(${i});toggleQuestionNav()"`;
+              return `<div class="q-dot ${cls}" ${clickable}>${i + 1}</div>`;
+            }).join('')}
+          </div>
+        </div>
       </div>
 
       <!-- Question Card -->
@@ -524,4 +542,9 @@ function submitQuiz() {
     const circle = container.querySelector('.score-circle');
     if (circle) circle.style.strokeDashoffset = dashOffset;
   }, 100);
+}
+
+function toggleQuestionNav() {
+  const overlay = document.getElementById('qNavOverlay');
+  if (overlay) overlay.classList.toggle('active');
 }
