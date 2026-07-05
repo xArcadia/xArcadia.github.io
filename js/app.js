@@ -24,7 +24,7 @@ const SUBJECTS = [
     id: 'sysad',
     title: 'System Administration',
     description: 'IT infrastructure, servers, cloud computing, virtualization, network services, SysAdmin roles, troubleshooting, organizational policies, DNS, and DHCP.',
-    modules: 5,
+    modules: 4,
     dataFile: 'sysad',
     icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>`
   },
@@ -59,7 +59,7 @@ const CHANGELOG = [
     version: 'v1.4.0',
     date: 'July 6, 2026',
     changes: [
-      { type: 'new', text: 'Added DNS and DHCP modules to System Administration (60 questions, Module 7 & 8, answers verified via Canvas LMS)' },
+      { type: 'new', text: 'Added Module 7-8 (DNS & DHCP) to System Administration (60 questions, answers verified via Canvas LMS)' },
       { type: 'new', text: 'Split Seatwork 4 into its own module in System Administration (17 questions)' },
       { type: 'improve', text: 'Streamlined flow — picking a subject now goes straight to its modules; picking a module starts the quiz immediately' },
       { type: 'new', text: 'Quiz keeps questions in file order by default, with a Shuffle button to randomize question and answer order' },

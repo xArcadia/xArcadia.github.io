@@ -275,10 +275,10 @@ const SYSAD_DATA = {
     },
     {
       id: 4,
-      title: 'DNS',
-      subtopics: ['Module 7 & 8 · DNS · Domain Name System, records, forwarders, DNSSEC, logging (Canvas LMS)'],
+      title: 'Module 7-8',
+      subtopics: ['Module 7 & 8 · DNS & DHCP · DNS (records, forwarders, DNSSEC, logging) and DHCP (DORA process, leases, scopes, options, relay agents) — Canvas LMS'],
       notes: [
-        { heading: 'DNS (Module 7 & 8)', points: ['30 multiple-choice questions on the Domain Name System — hierarchy, record types, forwarders, DNSSEC, logging, and PowerShell management. Answers verified against the Canvas LMS quizbank.'] }
+        { heading: 'Module 7 & 8 — DNS & DHCP', points: ['60 multiple-choice questions: DNS (Domain Name System — hierarchy, record types, forwarders, DNSSEC, logging, PowerShell) and DHCP (DORA process, leases, scopes, reservations, options, ports, relay agents). Answers verified against the Canvas LMS quizbank.'] }
       ],
       questions: [
         { id: 50001, type: 'multiple_choice', question: 'What does DNS stand for?', options: ['Digital Network System', 'Data Name Source', 'Domain Name System', 'Domain Network Service'], answer: 'C', explanation: 'Correct answer: Domain Name System. Answer verified from Canvas LMS quizbank (Module 7 & 8: DNS & DHCP).' },
@@ -311,16 +311,6 @@ const SYSAD_DATA = {
         { id: 50028, type: 'multiple_choice', question: 'Which DNS log type should be enabled only for troubleshooting?', options: ['Audit Logs', 'Forwarder Logs', 'Analytical Logs', 'Zone Transfer Logs'], answer: 'C', explanation: 'Correct answer: Analytical Logs. Answer verified from Canvas LMS quizbank (Module 7 & 8: DNS & DHCP).' },
         { id: 50029, type: 'multiple_choice', question: 'Which is a best practice for configuring DNS forwarders?', options: ['Use only one forwarder', 'Configure multiple forwarders for redundancy', 'Avoid conditional forwarders', 'Disable caching'], answer: 'B', explanation: 'Correct answer: Configure multiple forwarders for redundancy. Answer verified from Canvas LMS quizbank (Module 7 & 8: DNS & DHCP).' },
         { id: 50030, type: 'multiple_choice', question: 'Which PowerShell feature allows administrators to automate DNSSEC tasks?', options: ['nslookup', 'Server Manager', 'DNSSEC cmdlets', 'Event Viewer'], answer: 'C', explanation: 'Correct answer: DNSSEC cmdlets. Answer verified from Canvas LMS quizbank (Module 7 & 8: DNS & DHCP).' },
-      ]
-    },
-    {
-      id: 5,
-      title: 'DHCP',
-      subtopics: ['Module 7 & 8 · DHCP · DORA process, leases, scopes, options, relay agents (Canvas LMS)'],
-      notes: [
-        { heading: 'DHCP (Module 7 & 8)', points: ['30 multiple-choice questions on the Dynamic Host Configuration Protocol — the DORA process, leases, scopes, reservations, options, ports, and relay agents. Answers verified against the Canvas LMS quizbank.'] }
-      ],
-      questions: [
         { id: 50101, type: 'multiple_choice', question: 'What does DHCP stand for?', options: ['Dynamic Host Control Program', 'Data Handling Communication Protocol', 'Dynamic Host Configuration Protocol', 'Domain Host Control Protocol'], answer: 'C', explanation: 'Correct answer: Dynamic Host Configuration Protocol. Answer verified from Canvas LMS quizbank (Module 7 & 8: DNS & DHCP).' },
         { id: 50102, type: 'multiple_choice', question: 'What is the primary function of DHCP?', options: ['Encrypting traffic', 'Automatically assigning IP addresses', 'Monitoring network activity', 'Translating domain names'], answer: 'B', explanation: 'Correct answer: Automatically assigning IP addresses. Answer verified from Canvas LMS quizbank (Module 7 & 8: DNS & DHCP).' },
         { id: 50103, type: 'multiple_choice', question: 'Without DHCP, what problem is most likely to occur?', options: ['Slow internet speed', 'Lost packets', 'IP address conflicts', 'Weak encryption'], answer: 'C', explanation: 'Correct answer: IP address conflicts. Answer verified from Canvas LMS quizbank (Module 7 & 8: DNS & DHCP).' },
