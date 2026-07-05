@@ -111,11 +111,11 @@ let tableFlagState = {
 };
 
 function startTableFlagChallenge() {
-  const container = document.getElementById('challengeTab');
+  const container = document.getElementById('subjectContent');
   // Show question picker
   container.innerHTML = `
     <div class="challenge-setup">
-      <button class="reviewer-back" onclick="initChallenge('cspt')">
+      <button class="reviewer-back" onclick="showSubjectModules('quiz')">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
         Back to Modules
       </button>
@@ -146,7 +146,7 @@ function launchTableFlag(index) {
 }
 
 function renderTableFlag() {
-  const container = document.getElementById('challengeTab');
+  const container = document.getElementById('subjectContent');
   const q = TABLE_FLAG_QUESTIONS[tableFlagState.questionIndex];
   const submitted = tableFlagState.submitted;
 

@@ -17,18 +17,6 @@ function akSearchDebounce(value) {
   akSearchTimer = setTimeout(() => updateAKContent(), 250);
 }
 
-function initAnswerKey(subjectId) {
-  const container = document.getElementById('answerkeyTab');
-  const data = getCurrentData();
-  if (!container || !data) return;
-  renderModuleList(container, data.modules, 'answerkey');
-
-  // Override the click handler for answer key module cards
-  container.querySelectorAll('.module-card').forEach((card, i) => {
-    card.onclick = () => selectAKModule(data.modules[i].id);
-  });
-}
-
 function selectAKModule(moduleId) {
   akState.moduleId = moduleId;
   akState.searchQuery = '';
@@ -39,13 +27,13 @@ function selectAKModule(moduleId) {
 }
 
 function renderAnswerKey() {
-  const container = document.getElementById('answerkeyTab');
+  const container = document.getElementById('subjectContent');
   const mod = getCurrentData().modules.find(m => m.id === akState.moduleId);
   if (!mod) return;
 
   container.innerHTML = `
     <div class="answer-key-container">
-      <button class="reviewer-back" onclick="initAnswerKey(currentSubjectId)">
+      <button class="reviewer-back" onclick="showSubjectModules('answerkey')">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
         Back to Modules
       </button>

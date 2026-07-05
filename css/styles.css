@@ -1405,6 +1405,52 @@ a { color: var(--accent-primary); text-decoration: none; }
 .view-mode-btn:hover { color: var(--text-primary); }
 .view-mode-btn.active { background: var(--accent-gradient); color: white; }
 
+/* --- Subject module list (Quiz / Answer Key) --- */
+.modules-view { margin-top: 8px; }
+.modules-toggle {
+  display: inline-flex;
+  margin-bottom: 10px;
+}
+.modules-hint {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0 0 20px;
+}
+
+/* --- Quiz top bar (Back + Shuffle) --- */
+.quiz-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.shuffle-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 14px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  background: var(--bg-glass);
+  color: var(--text-secondary);
+  font-family: var(--font-family);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.shuffle-toggle:hover {
+  color: var(--text-primary);
+  border-color: var(--accent-primary);
+}
+.shuffle-toggle.active {
+  background: var(--accent-gradient);
+  color: white;
+  border-color: transparent;
+}
+.shuffle-toggle svg { width: 16px; height: 16px; }
+
 .search-bar {
   position: relative;
   flex: 1;

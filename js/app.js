@@ -23,8 +23,8 @@ const SUBJECTS = [
   {
     id: 'sysad',
     title: 'System Administration',
-    description: 'IT infrastructure, servers, cloud computing, virtualization, network services, SysAdmin roles, troubleshooting, and organizational policies.',
-    modules: 2,
+    description: 'IT infrastructure, servers, cloud computing, virtualization, network services, SysAdmin roles, troubleshooting, organizational policies, DNS, and DHCP.',
+    modules: 5,
     dataFile: 'sysad',
     icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>`
   },
@@ -55,6 +55,17 @@ function getCurrentData() {
 
 // --- Changelog ---
 const CHANGELOG = [
+  {
+    version: 'v1.4.0',
+    date: 'July 6, 2026',
+    changes: [
+      { type: 'new', text: 'Added DNS and DHCP modules to System Administration (60 questions, Module 7 & 8, answers verified via Canvas LMS)' },
+      { type: 'new', text: 'Split Seatwork 4 into its own module in System Administration (17 questions)' },
+      { type: 'improve', text: 'Streamlined flow — picking a subject now goes straight to its modules; picking a module starts the quiz immediately' },
+      { type: 'new', text: 'Quiz keeps questions in file order by default, with a Shuffle button to randomize question and answer order' },
+      { type: 'fix', text: 'Fixed duplicate question IDs in System Administration' }
+    ]
+  },
   {
     version: 'v1.3.0',
     date: 'March 31, 2026',
@@ -219,9 +230,8 @@ document.addEventListener('DOMContentLoaded', () => {
     renderSubjectCards(grid);
   }
 
-  // Subject page — init tabs
-  const tabNav = document.getElementById('tabNav');
-  if (tabNav) {
+  // Subject page — render module list
+  if (document.getElementById('subjectContent')) {
     initSubjectPage();
   }
 });
@@ -267,23 +277,50 @@ function initSubjectPage() {
   if (titleEl) titleEl.textContent = subject.title;
   document.title = `${subject.title} — Interactive Reviewer`;
 
-  // Tab navigation
-  const tabs = document.querySelectorAll('.tab-btn');
-  tabs.forEach(btn => {
-    btn.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active'));
-      btn.classList.add('active');
+  // Land straight on the module list (Quiz view)
+  showSubjectModules('quiz');
+}
 
-      document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
-      const target = document.getElementById(btn.dataset.tab + 'Tab');
-      if (target) target.classList.add('active');
-    });
-  });
+// --- Subject Page: Module list (Quiz / Answer Key) ---
+// `view` is 'quiz' (click a module to start its quiz) or 'answerkey' (browse Q&A).
+function showSubjectModules(view = 'quiz') {
+  const container = document.getElementById('subjectContent');
+  const data = getCurrentData();
+  if (!container || !data) return;
+  const isQuiz = view === 'quiz';
 
-  // Initialize feature modules
-  if (typeof initReviewer === 'function') initReviewer(subjectId);
-  if (typeof initChallenge === 'function') initChallenge(subjectId);
-  if (typeof initAnswerKey === 'function') initAnswerKey(subjectId);
+  container.innerHTML = `
+    <div class="modules-view">
+      <div class="view-mode-toggle modules-toggle">
+        <button class="view-mode-btn ${isQuiz ? 'active' : ''}" onclick="showSubjectModules('quiz')">Quiz</button>
+        <button class="view-mode-btn ${!isQuiz ? 'active' : ''}" onclick="showSubjectModules('answerkey')">Answer Key</button>
+      </div>
+      <p class="modules-hint">${isQuiz
+        ? 'Pick a module to start its quiz right away.'
+        : 'Pick a module to browse its questions and answers.'}</p>
+      <div class="module-grid">
+        ${data.modules.map(m => `
+          <div class="module-card" onclick="${isQuiz ? `startModuleQuiz(${m.id})` : `selectAKModule(${m.id})`}">
+            <div class="module-card-number">${m.id}</div>
+            <div class="module-card-info">
+              <h4>${m.title}</h4>
+              <p>${m.subtopics.join(' • ')}</p>
+            </div>
+          </div>
+        `).join('')}
+        ${(isQuiz && currentSubjectId === 'cspt') ? `
+          <div class="module-card tf-special-card" onclick="startTableFlagChallenge()">
+            <div class="module-card-number" style="background:linear-gradient(135deg, var(--error), var(--warning))">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+            </div>
+            <div class="module-card-info">
+              <h4>Table Flag Challenge</h4>
+              <p>Mod 4–5 Combined • Trace instructions & determine flag values</p>
+            </div>
+          </div>` : ''}
+      </div>
+    </div>
+  `;
 }
 
 // --- What's New Modal ---

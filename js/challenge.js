@@ -1,252 +1,117 @@
 /* ===================================================
-   challenge.js — Quiz / Exam engine
+   challenge.js — Quiz engine
+   Flow: pick a module -> quiz starts immediately.
+   Questions stay in file order by default; a Shuffle
+   button randomizes both question order and answer
+   (option) positions. Answers are revealed immediately.
    =================================================== */
 
 let challengeState = {
   moduleId: null,
-  mode: 'normal', // 'normal' or 'hell'
-  examType: 'mixed',
-  timed: false,
-  timeLimit: 0,
-  questionCount: 10,
-  questions: [],
+  base: [],        // questions in original file order
+  shuffled: false, // whether the current deck is randomized
+  questions: [],   // working deck (possibly shuffled)
   currentIndex: 0,
   answers: {},
-  submitted: false,
-  timerInterval: null,
-  timeRemaining: 0
+  submitted: false
 };
 
-function initChallenge(subjectId) {
-  const container = document.getElementById('challengeTab');
-  const data = getCurrentData();
-  if (!container || !data) return;
-  renderChallengeModuleList(container, data.modules);
-}
-
-function renderChallengeModuleList(container, modules) {
-  container.innerHTML = `
-    <div class="module-grid">
-      ${modules.map(m => `
-        <div class="module-card" onclick="selectChallengeModule(${m.id})">
-          <div class="module-card-number">${m.id}</div>
-          <div class="module-card-info">
-            <h4>${m.title}</h4>
-            <p>${m.subtopics.join(' • ')}</p>
-          </div>
-        </div>
-      `).join('')}
-      ${currentSubjectId === 'cspt' ? `
-      <div class="module-card tf-special-card" onclick="startTableFlagChallenge()">
-        <div class="module-card-number" style="background:linear-gradient(135deg, var(--error), var(--warning))">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
-        </div>
-        <div class="module-card-info">
-          <h4>Table Flag Challenge</h4>
-          <p>Mod 4–5 Combined • Trace instructions & determine flag values</p>
-        </div>
-      </div>
-      ` : ''}
-    </div>
-  `;
-}
-
-function selectChallengeModule(moduleId) {
-  challengeState.moduleId = moduleId;
-  showChallengeSetup();
-}
-
-function showChallengeSetup() {
-  const container = document.getElementById('challengeTab');
-  const mod = getCurrentData().modules.find(m => m.id === challengeState.moduleId);
-  if (!mod) return;
-  const maxQ = mod.questions.length;
-
-  container.innerHTML = `
-    <div class="challenge-setup">
-      <button class="reviewer-back" onclick="initChallenge(currentSubjectId)">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
-        Back to Modules
-      </button>
-      <div class="section-header" style="margin-bottom:24px">
-        <h1>Module ${mod.id}: ${mod.title}</h1>
-        <p>Set up your challenge</p>
-      </div>
-
-      <!-- Mode Selection -->
-      <h4 style="margin-bottom:12px;font-size:0.95rem;color:var(--text-secondary)">Select Mode</h4>
-      <div class="mode-selector">
-        <div class="mode-card normal selected" id="modeNormal" onclick="selectMode('normal')">
-          <div class="mode-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M9 12l2 2 4-4"/></svg>
-          </div>
-          <h4>Normal Mode</h4>
-          <p>See correct answers immediately. Go back and change answers anytime.</p>
-        </div>
-        <div class="mode-card hell" id="modeHell" onclick="selectMode('hell')">
-          <div class="mode-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--error)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-          </div>
-          <h4>Hell Mode</h4>
-          <p>Real exam simulation. No going back. No answer reveals. Results only at the end.</p>
-        </div>
-      </div>
-
-      <!-- Settings -->
-      <div class="settings-panel">
-        <h4>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-          Settings
-        </h4>
-        <div class="settings-row">
-          <div class="settings-group">
-            <label>Question Type</label>
-            <select id="examType" onchange="challengeState.examType=this.value">
-              <option value="mixed">Mixed (All Types)</option>
-              <option value="multiple_choice">Multiple Choice</option>
-              <option value="true_false">True or False</option>
-            </select>
-          </div>
-          <div class="settings-group">
-            <label>Number of Questions (max ${maxQ})</label>
-            <input type="number" id="questionCount" value="${Math.min(10, maxQ)}" min="1" max="${maxQ}" onchange="challengeState.questionCount=Math.min(parseInt(this.value)||1,${maxQ})">
-          </div>
-        </div>
-        <div class="settings-row">
-          <div class="settings-group">
-            <label>Timer</label>
-            <select id="timerSelect" onchange="updateTimer(this.value)">
-              <option value="0">No Timer</option>
-              <option value="30">30 seconds</option>
-              <option value="60">1 minute</option>
-              <option value="120">2 minutes</option>
-              <option value="300">5 minutes</option>
-              <option value="600">10 minutes</option>
-              <option value="900">15 minutes</option>
-              <option value="1800">30 minutes</option>
-              <option value="custom">Custom</option>
-            </select>
-          </div>
-          <div class="settings-group" id="customTimerGroup" style="display:none">
-            <label>Custom Time (seconds)</label>
-            <input type="number" id="customTimer" value="60" min="10" max="7200">
-          </div>
-        </div>
-      </div>
-
-      <button class="start-btn" onclick="startChallenge()">
-        Start Challenge
-      </button>
-    </div>
-  `;
-}
-
-function selectMode(mode) {
-  challengeState.mode = mode;
-  document.querySelectorAll('.mode-card').forEach(c => c.classList.remove('selected'));
-  document.getElementById(mode === 'normal' ? 'modeNormal' : 'modeHell').classList.add('selected');
-}
-
-function updateTimer(val) {
-  const custom = document.getElementById('customTimerGroup');
-  if (val === 'custom') {
-    custom.style.display = '';
-    challengeState.timed = true;
-  } else {
-    custom.style.display = 'none';
-    challengeState.timed = parseInt(val) > 0;
-    challengeState.timeLimit = parseInt(val);
-  }
-}
-
-function startChallenge() {
-  const mod = getCurrentData().modules.find(m => m.id === challengeState.moduleId);
-  if (!mod) return;
-
-  let pool = [...mod.questions];
-  if (challengeState.examType !== 'mixed') {
-    pool = pool.filter(q => q.type === challengeState.examType);
-  }
-
-  // Shuffle
-  for (let i = pool.length - 1; i > 0; i--) {
+// --- Deck building & shuffling ---
+function shuffleArray(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [pool[i], pool[j]] = [pool[j], pool[i]];
+    [a[i], a[j]] = [a[j], a[i]];
   }
+  return a;
+}
 
-  const count = Math.min(challengeState.questionCount, pool.length);
-  challengeState.questions = pool.slice(0, count);
+// Return a copy of a multiple-choice question with its options reshuffled
+// and the correct-answer letter(s) remapped to the new positions.
+function shuffleMCOptions(q) {
+  if (q.type !== 'multiple_choice' || !q.options || q.options.length < 2) return { ...q };
+  const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+  const order = shuffleArray(q.options.map((_, i) => i)); // permutation of old indices
+  const options = order.map(i => q.options[i]);
+  const oldCorrect = (q.multiSelect ? q.answer.split(',') : [q.answer]).map(l => letters.indexOf(l));
+  const newCorrect = oldCorrect.map(oi => order.indexOf(oi)).sort((a, b) => a - b);
+  const answer = newCorrect.map(i => letters[i]).join(',');
+  return { ...q, options, answer };
+}
+
+function buildDeck(base, shuffled) {
+  if (!shuffled) return base.map(q => ({ ...q }));      // file order, cloned
+  return shuffleArray(base).map(shuffleMCOptions);      // randomized questions + options
+}
+
+// --- Entry point: start a module's quiz immediately ---
+function startModuleQuiz(moduleId) {
+  const data = getCurrentData();
+  const mod = data && data.modules.find(m => m.id === moduleId);
+  if (!mod) return;
+  challengeState.moduleId = moduleId;
+  challengeState.base = mod.questions;
+  challengeState.shuffled = false;
+  challengeState.questions = buildDeck(challengeState.base, false);
   challengeState.currentIndex = 0;
   challengeState.answers = {};
   challengeState.submitted = false;
-
-  if (challengeState.timed) {
-    if (document.getElementById('customTimerGroup')?.style.display !== 'none') {
-      challengeState.timeLimit = parseInt(document.getElementById('customTimer')?.value) || 60;
-    }
-    challengeState.timeRemaining = challengeState.timeLimit;
-  }
-
   renderQuiz();
-
-  if (challengeState.timed) startTimer();
 }
 
-function startTimer() {
-  if (challengeState.timerInterval) clearInterval(challengeState.timerInterval);
-  challengeState.timerInterval = setInterval(() => {
-    challengeState.timeRemaining--;
-    updateTimerDisplay();
-    if (challengeState.timeRemaining <= 0) {
-      clearInterval(challengeState.timerInterval);
-      submitQuiz();
-    }
-  }, 1000);
+function toggleShuffleQuiz() {
+  challengeState.shuffled = !challengeState.shuffled;
+  challengeState.questions = buildDeck(challengeState.base, challengeState.shuffled);
+  challengeState.currentIndex = 0;
+  challengeState.answers = {};
+  challengeState.submitted = false;
+  renderQuiz();
 }
 
-function updateTimerDisplay() {
-  const el = document.getElementById('quizTimer');
-  if (!el) return;
-  const mins = Math.floor(challengeState.timeRemaining / 60);
-  const secs = challengeState.timeRemaining % 60;
-  el.textContent = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
-
-  const wrapper = el.closest('.quiz-timer');
-  if (wrapper) {
-    wrapper.classList.remove('warning', 'danger');
-    if (challengeState.timeRemaining <= 10) wrapper.classList.add('danger');
-    else if (challengeState.timeRemaining <= 30) wrapper.classList.add('warning');
-  }
+function restartQuiz() {
+  challengeState.questions = buildDeck(challengeState.base, challengeState.shuffled);
+  challengeState.currentIndex = 0;
+  challengeState.answers = {};
+  challengeState.submitted = false;
+  renderQuiz();
 }
 
+// --- Quiz rendering ---
 function renderQuiz() {
-  const container = document.getElementById('challengeTab');
+  const container = document.getElementById('subjectContent');
+  if (!container) return;
   const q = challengeState.questions[challengeState.currentIndex];
   const total = challengeState.questions.length;
   const idx = challengeState.currentIndex;
-  const isHell = challengeState.mode === 'hell';
-  const answered = challengeState.answers[q.id] !== undefined;
+  const answered = challengeState.answers[q.id] !== undefined && challengeState.answers[q.id] !== '';
+  const revealed = answered && !challengeState.submitted;
   const userAnswer = challengeState.answers[q.id];
 
-  // Check if already revealed (normal mode)
-  const revealed = !isHell && answered && !challengeState.submitted;
+  const mod = getCurrentData().modules.find(m => m.id === challengeState.moduleId);
+  const moduleTitle = mod ? mod.title : 'Quiz';
 
   container.innerHTML = `
     <div class="quiz-container">
+      <!-- Top bar -->
+      <div class="quiz-topbar">
+        <button class="reviewer-back" onclick="showSubjectModules('quiz')">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+          Back to Modules
+        </button>
+        <button class="shuffle-toggle ${challengeState.shuffled ? 'active' : ''}" onclick="toggleShuffleQuiz()" title="Randomize question and answer order">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
+          ${challengeState.shuffled ? 'Shuffled' : 'Shuffle'}
+        </button>
+      </div>
+
       <!-- Header -->
       <div class="quiz-header">
         <div class="quiz-progress">
-          <span>Question ${idx + 1} of ${total}</span>
+          <span>${moduleTitle} — Question ${idx + 1} of ${total}</span>
           <div class="progress-bar">
             <div class="progress-bar-fill" style="width:${((idx + 1) / total) * 100}%"></div>
           </div>
         </div>
-        ${challengeState.timed ? `
-          <div class="quiz-timer">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            <span id="quizTimer">--:--</span>
-          </div>
-        ` : ''}
       </div>
 
       <!-- Question Nav Toggle -->
@@ -270,9 +135,8 @@ function renderQuiz() {
             ${challengeState.questions.map((qq, i) => {
               let cls = '';
               if (i === idx) cls = 'current';
-              else if (challengeState.answers[qq.id] !== undefined) cls = 'answered';
-              const clickable = isHell ? (i <= idx ? `onclick="goToQuestion(${i});toggleQuestionNav()"` : '') : `onclick="goToQuestion(${i});toggleQuestionNav()"`;
-              return `<div class="q-dot ${cls}" ${clickable}>${i + 1}</div>`;
+              else if (challengeState.answers[qq.id] !== undefined && challengeState.answers[qq.id] !== '') cls = 'answered';
+              return `<div class="q-dot ${cls}" onclick="goToQuestion(${i});toggleQuestionNav()">${i + 1}</div>`;
             }).join('')}
           </div>
         </div>
@@ -287,7 +151,7 @@ function renderQuiz() {
         ${q.type === 'true_false' ? renderTFOptions(q, userAnswer, revealed) : ''}
         ${q.type === 'identification' ? renderIDInput(q, userAnswer) : ''}
 
-        ${revealed ? `
+        ${revealed && q.explanation ? `
           <div class="explanation-box">
             <h5>Explanation</h5>
             <p>${q.explanation}</p>
@@ -297,12 +161,10 @@ function renderQuiz() {
 
       <!-- Navigation -->
       <div class="quiz-nav">
-        ${!isHell ? `
-          <button class="quiz-nav-btn" onclick="prevQuestion()" ${idx === 0 ? 'disabled' : ''}>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
-            Previous
-          </button>
-        ` : '<div></div>'}
+        <button class="quiz-nav-btn" onclick="prevQuestion()" ${idx === 0 ? 'disabled' : ''}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+          Previous
+        </button>
         ${idx < total - 1 ? `
           <button class="quiz-nav-btn" onclick="nextQuestion()">
             Next
@@ -317,8 +179,6 @@ function renderQuiz() {
       </div>
     </div>
   `;
-
-  if (challengeState.timed) updateTimerDisplay();
 }
 
 function renderMCOptions(q, userAnswer, revealed) {
@@ -366,47 +226,26 @@ function renderTFOptions(q, userAnswer, revealed) {
 }
 
 function renderIDInput(q, userAnswer) {
-  return `<input class="identification-input" type="text" placeholder="Type your answer..." value="${userAnswer || ''}" oninput="selectAnswer('${q.id}', this.value)">`;
+  // Store on input without re-rendering (keeps focus); reveal happens on navigation.
+  const safe = (userAnswer || '').replace(/"/g, '&quot;');
+  return `<input class="identification-input" type="text" placeholder="Type your answer..." value="${safe}" oninput="challengeState.answers['${q.id}']=this.value">`;
 }
 
 function toggleMultiAnswer(qId, letter) {
   let current = challengeState.answers[qId] ? challengeState.answers[qId].split(',') : [];
-  const idx = current.indexOf(letter);
-  if (idx >= 0) {
-    current.splice(idx, 1);
-  } else {
-    current.push(letter);
-    current.sort();
-  }
+  const i = current.indexOf(letter);
+  if (i >= 0) current.splice(i, 1);
+  else { current.push(letter); current.sort(); }
   challengeState.answers[qId] = current.join(',');
   renderQuiz();
 }
 
 function selectAnswer(qId, answer) {
   challengeState.answers[qId] = answer;
-  const isHell = challengeState.mode === 'hell';
-
-  if (!isHell) {
-    // Normal mode: show answer immediately
-    renderQuiz();
-  } else {
-    // Hell mode: just update dots, auto-advance after short delay
-    const q = challengeState.questions[challengeState.currentIndex];
-    if (q.type !== 'identification') {
-      setTimeout(() => {
-        if (challengeState.currentIndex < challengeState.questions.length - 1) {
-          challengeState.currentIndex++;
-          renderQuiz();
-        } else {
-          renderQuiz(); // re-render to show submit
-        }
-      }, 300);
-    }
-  }
+  renderQuiz();
 }
 
 function prevQuestion() {
-  if (challengeState.mode === 'hell') return;
   if (challengeState.currentIndex > 0) {
     challengeState.currentIndex--;
     renderQuiz();
@@ -421,14 +260,11 @@ function nextQuestion() {
 }
 
 function goToQuestion(index) {
-  if (challengeState.mode === 'hell' && index > challengeState.currentIndex) return;
-  if (challengeState.mode === 'hell' && index < challengeState.currentIndex) return; // No going back
   challengeState.currentIndex = index;
   renderQuiz();
 }
 
 function submitQuiz() {
-  if (challengeState.timerInterval) clearInterval(challengeState.timerInterval);
   challengeState.submitted = true;
 
   let correct = 0;
@@ -464,13 +300,13 @@ function submitQuiz() {
   else if (pct >= 50) message = 'Not Bad! Keep Going! 💪';
   else message = 'Keep Studying! 📚';
 
-  const container = document.getElementById('challengeTab');
+  const container = document.getElementById('subjectContent');
   container.innerHTML = `
     <div class="results-container">
       <div class="results-score-circle">
         <svg viewBox="0 0 180 180">
           <circle class="bg-circle" cx="90" cy="90" r="80"/>
-          <circle class="score-circle" cx="90" cy="90" r="80" style="stroke-dashoffset:${dashOffset};stroke:${pct >= 75 ? 'var(--success)' : pct >= 50 ? 'var(--warning)' : 'var(--error)'}"/>
+          <circle class="score-circle" cx="90" cy="90" r="80" style="stroke-dashoffset:502;stroke:${pct >= 75 ? 'var(--success)' : pct >= 50 ? 'var(--warning)' : 'var(--error)'}"/>
         </svg>
         <div class="score-text" style="color:${pct >= 75 ? 'var(--success)' : pct >= 50 ? 'var(--warning)' : 'var(--error)'}">${pct}%</div>
         <div class="score-label">Score</div>
@@ -488,8 +324,8 @@ function submitQuiz() {
         </div>
       </div>
       <div class="results-actions">
-        <button class="results-btn primary" onclick="showChallengeSetup()">Try Again</button>
-        <button class="results-btn secondary" onclick="initChallenge('cspt')">Pick Module</button>
+        <button class="results-btn primary" onclick="restartQuiz()">Try Again</button>
+        <button class="results-btn secondary" onclick="showSubjectModules('quiz')">Pick Module</button>
       </div>
 
       <!-- Review Answers -->
@@ -528,7 +364,7 @@ function submitQuiz() {
               <div class="review-item-answer">
                 Your answer: <span class="${isCorrect ? 'correct-ans' : 'user-ans'}">${ansDisplay}</span>
                 ${!isCorrect ? `<br>Correct answer: <span class="correct-ans">${correctDisplay}</span>` : ''}
-                <br><em style="color:var(--text-muted);font-size:0.85rem">${q.explanation}</em>
+                ${q.explanation ? `<br><em style="color:var(--text-muted);font-size:0.85rem">${q.explanation}</em>` : ''}
               </div>
             </div>
           `;
@@ -537,7 +373,7 @@ function submitQuiz() {
     </div>
   `;
 
-  // Animate score circle
+  // Animate score circle from empty to target
   setTimeout(() => {
     const circle = container.querySelector('.score-circle');
     if (circle) circle.style.strokeDashoffset = dashOffset;
