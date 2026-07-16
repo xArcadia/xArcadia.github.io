@@ -1990,3 +1990,130 @@ a { color: var(--accent-primary); text-decoration: none; }
   .question-dots { gap: 4px; }
   .q-dot { width: 28px; height: 28px; font-size: 0.65rem; }
 }
+
+/* ===================================================
+   Cute Mode — opt-in playful layer (data-cute="on")
+   =================================================== */
+
+/* Cute-mode toggle switch in the profile menu */
+.cute-toggle {
+  width: 46px; height: 26px; flex: 0 0 auto; position: relative;
+  border-radius: var(--radius-full); border: 1px solid var(--border-color);
+  background: var(--bg-glass); cursor: pointer; padding: 0;
+  transition: background var(--transition-base), border-color var(--transition-base);
+}
+.cute-toggle::after {
+  content: ''; position: absolute; top: 2px; left: 2px; width: 20px; height: 20px;
+  border-radius: 50%; background: var(--text-muted);
+  transition: left 0.22s cubic-bezier(.34,1.56,.64,1), background 0.2s;
+}
+.cute-toggle.on { background: var(--accent-gradient); border-color: transparent; }
+.cute-toggle.on::after { left: 23px; background: #fff; }
+.cute-toggle:focus-visible { outline: 2px solid var(--accent-primary); outline-offset: 2px; }
+
+/* --- Soft visual refresh when cute mode is on --- */
+[data-cute="on"] {
+  --radius-sm: 14px;
+  --radius-md: 20px;
+  --radius-lg: 26px;
+  --radius-xl: 32px;
+}
+[data-cute="on"] body {
+  background:
+    radial-gradient(closest-side at 8% 0%, rgba(255,142,198,.10), transparent),
+    radial-gradient(closest-side at 92% 4%, rgba(185,164,255,.10), transparent),
+    radial-gradient(closest-side at 96% 96%, rgba(126,224,193,.09), transparent),
+    var(--bg-primary);
+  background-attachment: fixed;
+}
+[data-cute="on"] h1, [data-cute="on"] h2, [data-cute="on"] h3, [data-cute="on"] h4,
+[data-cute="on"] .header-title, [data-cute="on"] .question-text,
+[data-cute="on"] .score-text, [data-cute="on"] .results-message,
+[data-cute="on"] .flip-card-text {
+  font-family: 'Fredoka', ui-rounded, 'Segoe UI Rounded', 'Varela Round', var(--font-family);
+  letter-spacing: 0;
+}
+[data-cute="on"] .module-card:hover,
+[data-cute="on"] .subject-card:hover { transform: translateY(-4px) rotate(-0.5deg); }
+[data-cute="on"] .module-card-number { border-radius: 52% 48% 46% 54% / 55% 50% 50% 45%; }
+[data-cute="on"] .option-btn .option-letter { border-radius: 50%; }
+
+/* Delight: reveal animations on graded options */
+[data-cute="on"] .option-btn.correct,
+[data-cute="on"] .tf-btn.correct { animation: cuteBounce 0.45s ease; }
+[data-cute="on"] .option-btn.wrong,
+[data-cute="on"] .tf-btn.wrong { animation: cuteShake 0.4s ease; }
+@keyframes cuteBounce { 0%,100% { transform: none; } 40% { transform: translateY(-6px) scale(1.02); } }
+@keyframes cuteShake { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-6px); } 50% { transform: translateX(5px); } 75% { transform: translateX(-3px); } }
+
+/* --- Rewards: streak + sticker shelf (module list) --- */
+.cute-rewards { display: flex; gap: 10px; margin: 0 0 20px; flex-wrap: wrap; }
+.cute-streak {
+  display: flex; align-items: center; gap: 8px; padding: 10px 14px;
+  border-radius: var(--radius-md); border: 1px solid var(--border-color);
+  background: linear-gradient(135deg, rgba(255,142,198,.14), rgba(185,164,255,.14));
+  font-weight: 700; font-size: 0.9rem; white-space: nowrap;
+}
+.cute-shelf {
+  flex: 1; min-width: 160px; display: flex; align-items: center; gap: 6px;
+  padding: 8px 14px; border-radius: var(--radius-md);
+  background: var(--bg-card); border: 1px solid var(--border-color); overflow: hidden;
+}
+.cute-shelf-lbl { font-size: 0.7rem; color: var(--text-muted); font-weight: 700; }
+.cute-sticker { font-size: 1.2rem; line-height: 1; animation: cutePlop 0.4s ease both; }
+@keyframes cutePlop { from { transform: scale(0) rotate(-20deg); } to { transform: none; } }
+
+/* --- Study buddy mascot (floating, decorative) --- */
+.cute-buddy { display: none; }
+[data-cute="on"] .cute-buddy {
+  display: block; position: fixed; right: 14px; bottom: 14px;
+  width: 74px; height: 74px; z-index: 50; pointer-events: none;
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,.18));
+  animation: cutePlop 0.4s ease both;
+}
+.cute-buddy svg { width: 100%; height: 100%; overflow: visible; display: block; }
+.cute-buddy .cb-body { transform-origin: 50% 92%; animation: cbBob 3s ease-in-out infinite; }
+.cute-combo {
+  position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+  font-size: 0.72rem; font-weight: 800; color: var(--accent-primary);
+  background: var(--bg-card); border: 1px solid var(--border-color);
+  padding: 2px 8px; border-radius: var(--radius-full); white-space: nowrap;
+  opacity: 0; transition: opacity 0.2s; box-shadow: var(--shadow-sm);
+}
+.cute-combo.on { opacity: 1; }
+/* expressions */
+.cute-buddy .cb-eyes-happy, .cute-buddy .cb-eyes-sad, .cute-buddy .cb-eyes-sleepy,
+.cute-buddy .cb-m-smile, .cute-buddy .cb-m-frown, .cute-buddy .cb-m-open,
+.cute-buddy .cb-sparkle { display: none; }
+.cute-buddy.is-happy .cb-eyes-open, .cute-buddy.is-sad .cb-eyes-open,
+.cute-buddy.is-sleepy .cb-eyes-open, .cute-buddy.is-celebrate .cb-eyes-open { display: none; }
+.cute-buddy.is-happy .cb-eyes-happy, .cute-buddy.is-celebrate .cb-eyes-happy { display: block; }
+.cute-buddy.is-sad .cb-eyes-sad { display: block; }
+.cute-buddy.is-sleepy .cb-eyes-sleepy { display: block; }
+.cute-buddy.is-happy .cb-m-smile, .cute-buddy.is-celebrate .cb-m-open { display: block; }
+.cute-buddy.is-sad .cb-m-frown { display: block; }
+.cute-buddy.is-happy .cb-m-neutral, .cute-buddy.is-sad .cb-m-neutral,
+.cute-buddy.is-celebrate .cb-m-neutral { display: none; }
+.cute-buddy.is-celebrate .cb-sparkle { display: block; animation: cbTwinkle 0.8s ease infinite; }
+.cute-buddy.anim-bounce .cb-body { animation: cbBounce 0.5s ease; }
+.cute-buddy.anim-wiggle .cb-body { animation: cbWiggle 0.5s ease; }
+.cute-buddy.anim-jump .cb-body { animation: cbJump 0.7s ease; }
+@keyframes cbBob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@keyframes cbBounce { 0%,100% { transform: translateY(0); } 30% { transform: translateY(-16px) scale(1.05); } 60% { transform: translateY(0) scaleY(.94); } }
+@keyframes cbWiggle { 0%,100% { transform: rotate(0); } 20% { transform: rotate(-8deg); } 40% { transform: rotate(7deg); } 60% { transform: rotate(-5deg); } 80% { transform: rotate(3deg); } }
+@keyframes cbJump { 0% { transform: translateY(0); } 40% { transform: translateY(-26px) rotate(-6deg); } 70% { transform: translateY(0); } 85% { transform: scaleY(.9); } 100% { transform: none; } }
+@keyframes cbTwinkle { 0%,100% { opacity: .3; transform: scale(.8); } 50% { opacity: 1; transform: scale(1.1); } }
+
+/* Confetti overlay */
+.cute-confetti { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 60; display: none; }
+[data-cute="on"] .cute-confetti { display: block; }
+
+@media (prefers-reduced-motion: reduce) {
+  .cute-buddy .cb-body { animation: none; }
+  [data-cute="on"] .option-btn.correct, [data-cute="on"] .option-btn.wrong,
+  [data-cute="on"] .tf-btn.correct, [data-cute="on"] .tf-btn.wrong { animation: none; }
+}
+
+@media (max-width: 480px) {
+  [data-cute="on"] .cute-buddy { width: 60px; height: 60px; right: 10px; bottom: 10px; }
+}

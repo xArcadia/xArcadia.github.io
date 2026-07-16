@@ -56,6 +56,7 @@ function startModuleQuiz(moduleId) {
   challengeState.currentIndex = 0;
   challengeState.answers = {};
   challengeState.submitted = false;
+  if (window.Cute) Cute.quizStart();
   renderQuiz();
 }
 
@@ -65,6 +66,7 @@ function toggleShuffleQuiz() {
   challengeState.currentIndex = 0;
   challengeState.answers = {};
   challengeState.submitted = false;
+  if (window.Cute) Cute.quizStart();
   renderQuiz();
 }
 
@@ -73,6 +75,7 @@ function restartQuiz() {
   challengeState.currentIndex = 0;
   challengeState.answers = {};
   challengeState.submitted = false;
+  if (window.Cute) Cute.quizStart();
   renderQuiz();
 }
 
@@ -242,6 +245,10 @@ function toggleMultiAnswer(qId, letter) {
 
 function selectAnswer(qId, answer) {
   challengeState.answers[qId] = answer;
+  if (window.Cute) {
+    const cq = challengeState.questions[challengeState.currentIndex];
+    if (cq && cq.id === qId && cq.type !== 'identification') Cute.react(answer === cq.answer);
+  }
   renderQuiz();
 }
 
@@ -292,6 +299,7 @@ function submitQuiz() {
 
   const total = challengeState.questions.length;
   const pct = Math.round((correct / total) * 100);
+  const cuteSticker = window.Cute ? Cute.results(pct) : null;
   const dashOffset = 502 - (502 * pct / 100);
 
   let message = '';
@@ -313,6 +321,7 @@ function submitQuiz() {
       </div>
       <div class="results-message">${message}</div>
       <div class="results-sub">You scored ${correct} out of ${total} questions</div>
+      ${cuteSticker ? `<div style="display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700;margin:10px 0 2px">You earned a sticker! <span style="font-size:1.7rem">${cuteSticker}</span></div>` : ''}
       <div class="results-stats">
         <div class="results-stat">
           <div class="results-stat-value correct-val">${correct}</div>

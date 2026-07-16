@@ -122,7 +122,11 @@ const ACCENT_COLORS = {
   cyan:    { primary: '#06b6d4', secondary: '#0891b2', third: '#0e7490' },
   orange:  { primary: '#f97316', secondary: '#ea580c', third: '#c2410c' },
   violet:  { primary: '#8b5cf6', secondary: '#7c3aed', third: '#6d28d9' },
-  fuchsia: { primary: '#d946ef', secondary: '#c026d3', third: '#a21caf' }
+  fuchsia: { primary: '#d946ef', secondary: '#c026d3', third: '#a21caf' },
+  pink:     { primary: '#ff8ec6', secondary: '#f472b6', third: '#c084fc' },
+  mint:     { primary: '#34d6a8', secondary: '#2dd4bf', third: '#38bdf8' },
+  lavender: { primary: '#b49cff', secondary: '#a78bfa', third: '#818cf8' },
+  peach:    { primary: '#ff9e7d', secondary: '#fb923c', third: '#fbbf24' }
 };
 
 // --- Dark Mode ---
@@ -329,6 +333,9 @@ function showSubjectModules(view = 'quiz') {
       </div>
     </div>
   `;
+
+  // Cute mode: show streak + sticker shelf, reset mascot to idle (no-ops when off)
+  if (window.Cute) { Cute.decorateModules(); Cute.idle(); }
 }
 
 // --- What's New Modal ---
