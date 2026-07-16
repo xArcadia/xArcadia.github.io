@@ -23,16 +23,16 @@ const SUBJECTS = [
   {
     id: 'sysad',
     title: 'System Administration',
-    description: 'IT infrastructure, servers, cloud computing, virtualization, network services, SysAdmin roles, troubleshooting, organizational policies, DNS, and DHCP.',
-    modules: 4,
+    description: 'IT infrastructure, servers, cloud computing, virtualization, network services, SysAdmin roles, troubleshooting, organizational policies, DNS, DHCP, directory services, and VPN.',
+    modules: 5,
     dataFile: 'sysad',
     icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>`
   },
   {
     id: 'infosec',
     title: 'Information Security',
-    description: 'CIA triad, encryption, authentication, social engineering, malware, network attacks, security policies, and change management.',
-    modules: 2,
+    description: 'CIA triad, encryption, authentication, social engineering, malware, network attacks, security policies, change management, and data backup & recovery.',
+    modules: 3,
     dataFile: 'infosec',
     icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`
   }
@@ -55,6 +55,14 @@ function getCurrentData() {
 
 // --- Changelog ---
 const CHANGELOG = [
+  {
+    version: 'v1.5.0',
+    date: 'July 16, 2026',
+    changes: [
+      { type: 'new', text: 'Added Information Security “Seatwork 3” module (122 questions — data backup & recovery, encryption, and security controls; answers from Canvas LMS)' },
+      { type: 'new', text: 'Added System Administration “Summative 3” module (238 questions — directory services, LDAP/Kerberos, VPN & tunneling, access control; answers from Canvas LMS)' }
+    ]
+  },
   {
     version: 'v1.4.0',
     date: 'July 6, 2026',
