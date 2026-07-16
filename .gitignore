@@ -1,0 +1,35 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Interactive Reviewer — keep the deployed site to just the app + question banks
+#
+# The published site is: *.html, css/, js/ (incl. js/data/*.js). Everything below
+# is local source material or one-off extraction scaffolding that should NOT be
+# pushed. (Files already committed before this .gitignore are unaffected — this
+# only prevents NEW scratch files from being added. Run `git rm --cached <path>`
+# if you want to stop tracking something that's already committed.)
+# The reusable helper scripts in tools/ are intentionally kept (see /*.py note).
+# ─────────────────────────────────────────────────────────────────────────────
+
+# One-off extraction/build scripts at the repo root (tools/ is NOT matched)
+/*.py
+
+# Raw text and intermediate build dumps
+/*_raw.txt
+/*_output.txt
+/*_analysis.txt
+/*_parsed.json
+/*_extract.json
+/*_questions.json
+/*_merged.js
+/*_questions.js
+
+# Source PDFs and the drop folder for new material (kept locally, not deployed)
+/pdfs/
+/new files/
+/canvas version/
+/externals/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
