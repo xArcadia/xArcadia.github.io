@@ -60,7 +60,7 @@ const CHANGELOG = [
     date: 'July 16, 2026',
     changes: [
       { type: 'new', text: 'Added optional Cute Mode (profile menu) — reactive mascot, pastels, confetti, streaks & stickers. Off by default.' },
-      { type: 'new', text: 'Added Information Security “Final Exam Practice” module (49 identification questions)' }
+      { type: 'new', text: 'Added Information Security “Final Exam Practice” module (49 multiple-choice questions)' }
     ]
   },
   {
